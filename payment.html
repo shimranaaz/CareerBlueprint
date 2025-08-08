@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Payment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link href="favicon-32x32.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #fff;
+      color: #21243d;
+    }
+
+    #header {
+      background-color: #2c2a63;
+      color: #EDC9AF;
+    }
+
+    .main-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 880px;
+      margin: 100px auto;
+      padding: 24px;
+      background: #f2dcc9;
+      box-sizing: border-box;
+    }
+
+    .left-content,
+    .right-content {
+      flex: 1 1 48%;
+      box-sizing: border-box;
+      padding: 10px 15px;
+    }
+
+    .left-content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .pay-heading {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #2c2a63;
+    }
+
+    .user-info,
+    .bank-info,
+    .accepted,
+    .note,
+    .phone {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .upi-icons {
+      display: flex;
+      margin-left: -27px;
+    }
+
+    .upi-icons img {
+      height: 50px;
+      width: 100px;
+      object-fit: contain;
+      cursor: pointer;
+      padding-left: -20px;
+    }
+
+    .upi-label {
+      font-weight: 600;
+    }
+
+    .upi-id-text {
+      font-weight: bold;
+    }
+
+    .copy-btn {
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+    .copied {
+      font-size: 14px;
+      color: #2c2a63;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .copied.show {
+      opacity: 1;
+      animation: fadeOut 2s forwards;
+    }
+
+    @keyframes fadeOut {
+
+      0%,
+      70% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .right-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .qr-on-phone {
+      width: 240px;
+      height: 240px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+      background: #fff;
+    }
+
+    .qr-on-phone img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 6px;
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      right: 11px;
+      bottom: 19px;
+      background: #25d366;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      box-shadow: 0 2px 16px #3335;
+      cursor: pointer;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .whatsapp-btn img {
+      width: 32px;
+      height: 32px;
+    }
+
+    .accepted {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      gap: 4px;
+      margin-left: -2px;
+      font-weight: 700;
+      color: #444;
+      user-select: none;
+    }
+
+    .accepted img {
+      width: 27px;
+      height: 27px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .main-container {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .left-content,
+      .right-content {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .upi-id-row,
+      .accepted,
+      .upi-icons {
+        justify-content: center;
+      }
+
+      .pay-heading {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="d-flex align-items-center justify-content-between w-100 px-4" style="padding-left: 0 !important;">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="CB-logo.png" alt="Career Blueprint Logo"
+          style="height: 60px; width: 110px; object-fit: cover; margin-top: 10px;">
+
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">About</a></li>
+            <li><a href="index.html">What We Offer</a></li>
+          <li><a href="index.html">How-It-Work</a></li>
+          <li><a href="index.html">Resume</a></li>
+          <li><a href="index.html">Pricing</a></li>
+          <li><a href="index.html">Contact</a></li>
+        </ul>
+
+        <div class="mobile-social-icons">
+          <a href="https://www.facebook.com/people/Careers-Blueprint/61578394427960/" target="_blank"><i
+              class="bi bi-facebook"></i></a>
+           <a href="https://www.instagram.com/careers_blueprint?igsh=MXhoazNienZpc2U0Yw==" target="_blank">   <i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/careers-blueprint/" target="_blank"><i
+              class="bi bi-linkedin"></i></a>
+     <a href="https://wa.me/8124494755?text=Hi%2C%20I%E2%80%99ve%20completed%20the%20payment.%20Please%20confirm." 
+   onclick="openWhatsApp(); return false;" 
+   target="_blank" 
+   rel="noopener noreferrer">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+        </div>
+
+      </nav>
+      <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    </div>
+  </header>
+  <div class="main-container">
+    <div class="left-content">
+      <div class="pay-heading">Make a Secure UPI Payment</div>
+      <div class="user-info"><img src="profile.png" alt="Profile"
+          style="width:30px; height:30px; border-radius:50%; vertical-align:middle; margin-right:8px; cursor: pointer;">mohammed saadh
+      </div>
+      <div class="bank-info"><img src="sbi.png" alt="State Bank of India"
+          style="width:40px; vertical-align:middle; margin-right:10px; margin-top: -4px; cursor: pointer;">State Bank of India</div>
+      <div class="accepted">
+        <div class="accepted">
+          <img src="https://img.icons8.com/color/48/000000/checked--v1.png" alt="Tick Icon" />
+          <span>All UPI payments accepted</span>
+        </div>
+      </div>
+      <div class="upi-icons">
+        <img src="gpay.png" alt="Google Pay" />
+        <img src="phone-pe.png" alt="PhonePe" />
+        <img src="paytm.png" alt="PayTM" />
+      </div>
+      <div class="upi-id-row">
+        <!-- <span class="upi-label">UPI ID:</span> -->
+        <span class="upi-id-text" id="upi-id-txt">UPI ID: mohammedsaadh22@okhdfcbank</span>
+        <button class="copy-btn" aria-label="Copy UPI ID" onclick="copyUPIID()">
+          <svg width="24" height="24" fill="none" stroke="#2c2a63" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round" viewBox="0 0 24 24">
+            <rect x="9" y="9" width="13" height="13" rx="2" />
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+          </svg>
+        </button>
+        <span class="copied" id="copy-msg">Copied!</span>
+      </div>
+      <div class="note">After payment, kindly send the screenshot to HR:</div>
+      <div class="phone"><strong>+91 81244 94755</strong></div>
+    </div>
+
+    <div class="right-content">
+      <div class="qr-on-phone">
+        <img
+          src="https://api.qrserver.com/v1/create-qr-code/?data=upi%3A%2F%2Fpay%3Fpa%3Dmohammedsaadh22%40okhdfcbank%26pn%3DMohammed%20Saadh%26cu%3DINR%26tn%3DUPIPayment"
+          alt="UPI QR Code" />
+      </div>
+    </div>
+  </div>
+  <div class="whatsapp-btn" onclick="openWhatsApp()">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
+  </div>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+
+  <script>
+    function copyUPIID() {
+      const upiIDText = document.getElementById('upi-id-txt').innerText;
+      const upiID = upiIDText.replace('UPI ID: ', '').trim();
+      navigator.clipboard.writeText(upiID).then(function () {
+        const msg = document.getElementById('copy-msg');
+        msg.classList.add('show');
+        setTimeout(() => {
+          msg.classList.remove('show');
+        }, 1800);
+      }, function (err) {
+        alert('Could not copy UPI ID: ' + err);
+      });
+    }
+
+
+    function openWhatsApp() {
+      const phoneNumber = "8124494755";
+      const message = "Hi, I’ve completed the payment. Please confirm.";
+      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+    }
+
+        function showToast() {
+      var toastElement = document.getElementById('socialToast');
+      var toast = new bootstrap.Toast(toastElement);
+      toast.show();
+    }
+
+    document.getElementById('twitterLink').addEventListener('click', function (e) {
+      e.preventDefault();
+      showToast();
+    });
+    document.getElementById('facebookLink').addEventListener('click', function (e) {
+      e.preventDefault();
+      showToast();
+    });
+    document.getElementById('instagramLink').addEventListener('click', function (e) {
+      e.preventDefault();
+      showToast();
+    });
+    document.getElementById('linkedinLink').addEventListener('click', function (e) {
+      e.preventDefault();
+      showToast();
+    });
+
+
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+
+</html>

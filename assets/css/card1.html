@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>What We Offer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+      font-size: 2.2rem;
+      color: #212121;
+    }
+
+    .offer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .offer-card {
+      background-color: #f9f9f9;
+      border-radius: 20px;
+      overflow: hidden;
+      width: 250px;
+      max-width: 90%;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .offer-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .offer-image {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .offer-content {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .offer-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .offer-description {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 768px) {
+      .offer-card {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .offer-card {
+        width: 100%;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>What We Offer</h2>
+
+  <div class="offer-container">
+    <div class="offer-card">
+      <img src="https://via.placeholder.com/300x160?text=Interview+Prep" class="offer-image" alt="Interview Prep">
+      <div class="offer-content">
+        <div class="offer-title">Interview Prep 🎯</div>
+        <div class="offer-description">
+          Ace every interview with confidence. Master common questions, body language, and mock sessions to impress recruiters.
+        </div>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <img src="https://via.placeholder.com/300x160?text=Career+Coaching" class="offer-image" alt="Career Coaching">
+      <div class="offer-content">
+        <div class="offer-title">Career Coaching 🚀</div>
+        <div class="offer-description">
+          Find direction and build your dream career with 1:1 coaching to align skills and map goals.
+        </div>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <img src="https://via.placeholder.com/300x160?text=Resume+Review" class="offer-image" alt="Resume Review">
+      <div class="offer-content">
+        <div class="offer-title">Resume Review 📝</div>
+        <div class="offer-description">
+          Get expert feedback and improve your resume to attract the right recruiters and opportunities.
+        </div>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <img src="https://via.placeholder.com/300x160?text=Networking+Tips" class="offer-image" alt="Networking Tips">
+      <div class="offer-content">
+        <div class="offer-title">Networking Tips 🤝</div>
+        <div class="offer-description">
+          Learn to connect smartly with HRs, hiring managers, and professionals who open new doors.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

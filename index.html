@@ -33,8 +33,8 @@
     <div class="d-flex align-items-center justify-content-between w-100 px-4" style="padding-left: 0 !important;">
 
       <a href="index.html" class="logo d-flex align-items-center">
-   <img src="CB-logo.png" alt="Career Blueprint Logo"
-     style="height: 60px; width: 110px; object-fit: cover; margin-top: 10px;">
+        <img src="CB-logo.png" alt="Career Blueprint Logo"
+          style="height: 60px; width: 110px; object-fit: cover; margin-top: 10px;">
 
       </a>
 
@@ -42,69 +42,75 @@
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#whatweoffer">What We Offer</a></li>
           <li><a href="#howitwork">How-It-Work</a></li>
-          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#gallery">Resume</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
 
         <div class="mobile-social-icons">
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-twitter-x"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.facebook.com/people/Careers-Blueprint/61578394427960/" target="_blank"><i
+              class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/careers_blueprint?igsh=MXhoazNienZpc2U0Yw==" target="_blank"> <i
+              class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/careers-blueprint/" target="_blank"><i
+              class="bi bi-linkedin"></i></a>
+          <a href="https://wa.me/8124494755?text=Hi%2C%20I%E2%80%99ve%20completed%20the%20payment.%20Please%20confirm."
+            onclick="openWhatsApp(); return false;" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
         </div>
+
       </nav>
       <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
     </div>
   </header>
 
-
-
-  <main class="main">
-    <section id="hero" class="hero section dark-background">
-      <img src="assets/img/hero-bg-2.jpg" alt="" class="hero-bg">
-
-      <div class="container">
-        <div class="row gy-4 justify-content-between">
-          <div class="col-lg-4 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-          </div>
-
-          <div class="col-lg-6  d-flex flex-column justify-content-center" data-aos="fade-in">
-            <h1>
-              Build Your Landing Page With
-              <span class="typewriter-loop">Career Blueprint</span>
-            </h1>
-
-            <p>We use top keywords to make your skills stand out to HR, ensuring a 99% success rate with our affordable
-              resume writing service.</p>
-            <div class="d-flex">
-              <a href="#about" class="btn-get-started">Get Started</a>
-
-            </div>
-          </div>
-
+  <div class="home" id="hero">
+    <div class="container2">
+      <div class="text-section">
+        <h1>
+          We Don’t Just Write Resumes — We Build Careers with a
+          <span class="wave-text">
+            <span>C</span><span>a</span><span>r</span><span>e</span><span>e</span><span>r</span>
+            <span class="space"></span>
+            <span>B</span><span>l</span><span>u</span><span>e</span><span>p</span><span>r</span><span>i</span><span>n</span><span>t</span>
+          </span>
+        </h1>
+        <p>From resumes and LinkedIn profiles to job portal support and career counseling — we help you stand out, get
+          shortlisted, and get hired faster.</p>
+        <div class="d-flex">
+          <a href="#whatweoffer" class="btn-get-started">Get Started</a>
+          <a href="javascript:void(0);" class="btn-get-started" onclick="openWhatsApp()">Chat Us</a>
         </div>
       </div>
 
-      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28 " preserveAspectRatio="none">
-        <defs>
-          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
-        </defs>
-        <g class="wave1">
-          <use xlink:href="#wave-path" x="50" y="3"></use>
-        </g>
-        <g class="wave2">
-          <use xlink:href="#wave-path" x="50" y="0"></use>
-        </g>
-        <g class="wave3">
-          <use xlink:href="#wave-path" x="50" y="9"></use>
-        </g>
-      </svg>
+      <div class="image-section">
+        <img src="resume.png" class="resume-bg" alt="Resume Background" />
+        <img src="left.png" class="floating-left" alt="Floating Left Panel" />
+        <img src="right.png" class="floating-right" alt="Floating Right Panel" />
+      </div>
+    </div>
 
-    </section>
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z" />
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" />
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" />
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" />
+      </g>
+    </svg>
+  </div>
+
+
+  <main class="main">
     <section class="about-us" id="about">
       <div class="about-container">
 
@@ -123,10 +129,12 @@
             strengths and achievements,
             ensuring you make a lasting impression on potential employers.
           </p>
-          <a href="contact_info.html" class="read-more">
+          <a href="javascript:void(0);" class="read-more" onclick="openWhatsApp()">
             <span>Contact Us</span><i class="bi bi-arrow-right"></i>
           </a>
+
         </div>
+
         <div class="about-right" data-aos="fade-left">
           <div class="timeline-card left">
             <div class="year-banner year-blue"> <i class="bi bi-eye"></i>&nbsp;Professional CV Writers </div>
@@ -155,7 +163,7 @@
           <div class="timeline-card">
             <div class="year-banner year-blue"><i class="bi bi-graph-up-arrow"></i>&nbsp;On-time Delivery</div>
             <div class="card-body">
-         
+
               <p>We guarantee 100% on-time delivery of our resume writing services, adhering strictly to the agreed
                 timelines.</p>
             </div>
@@ -163,39 +171,94 @@
         </div>
       </div>
     </section>
+
+    <h2 style="color: #2c2a63;text-align: left; margin-bottom: 20px; font-weight: 700; padding-left: 50px;">
+      <i class="fa-solid fa-quote-left me-2" id="whatweoffer"></i>
+      What we offer
+      <i class="fa-solid fa-quote-right ms-2"></i>
+    </h2>
+    <div class="services">
+      <div class="service-card">
+        <img src="Interview prep.jpeg" alt="Interview Prep" class="service-image" />
+        <div class="service-text">
+          <div class="service-heading"> Interview Prep</div>
+          <div class="service-description">
+            <div class="service-subheading"><strong>Ace Every Interview with Confidence</strong>
+              Master common questions, body language, and real-time mock sessions to impress every recruiter you meet.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="Career coaching.jpeg" alt="Career Coaching" class="service-image" />
+        <div class="service-text">
+          <div class="service-heading"> Career Coaching</div>
+          <div class="service-description">
+            <div class="service-subheading"><strong>Find Direction. Build Your Dream Career.</strong>
+              Get personalized 1:1 coaching to identify your goals, align your skills, and map your perfect career path.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="resume.jpeg" alt="Resume Review" class="service-image" />
+        <div class="service-text">
+          <div class="service-heading"> Resume Review</div>
+          <div class="service-description">
+            <div class="service-subheading"><strong>Your Resume, Reimagined for Results</strong>
+              Receive detailed feedback and expert suggestions to turn your existing resume into a recruiter magnet.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="Network building.jpeg" alt="Networking Tips" class="service-image" />
+        <div class="service-text">
+          <div class="service-heading"> Networking Tips</div>
+          <div class="service-description">
+            <div class="service-subheading"><strong>Grow Your Network, Unlock Opportunities</strong>
+              Learn smart strategies to connect with HRs, hiring managers, and professionals who can open new career
+              doors.</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <section id="features" class="features section">
 
       <div class="container">
         <div class="col-xl-9 content">
           <h2>
-          <h2 style="color: #2c2a63; text-align: left; font-weight: 700; margin-bottom: 30px; padding-left: 15px;">
-  <i class="fa-solid fa-quote-left me-2"></i>
- Get hired at top companies
-  <i class="fa-solid fa-quote-right ms-2"></i>
-</h2>
+            <h2 style="color: #2c2a63; text-align: left; font-weight: 700; margin-bottom: 30px; padding-left: 15px;">
+              <i class="fa-solid fa-quote-left me-2"></i>
+              Get hired at top companies — 76% faster
+              <i class="fa-solid fa-quote-right ms-2"></i>
+            </h2>
 
         </div>
 
-          <div class="marquee-container1">
-    <div class="marquee-track">
-      <div class="scroll-card1"><img src="assets/img/companies/HCL.png" alt="Card 2" /></div>
-      <div class="scroll-card1"><img src="assets/img/companies/Amazon.png" alt="Card 1" /></div>
-      <div class="scroll-card1"><img src="assets/img/companies/oracle.png" alt="Card 3" /></div>
-      <div class="scroll-card1"><img src="assets/img/companies/freshworks.png" alt="Card 4" /></div>
-      <div class="scroll-card1"><img src="assets/img/companies/tcs.png" alt="Card 5" /></div>
-      <div class="scroll-card1"><img src="assets/img/companies/Wipro.png" alt="Card 6" /></div>
-      <div class="scroll-card1"><img src="assets/img/companies/Zoho.png" alt="Card 7" /></div>
-      <div class="scroll-card1"><img src="assets/img/companies/Tech-mahindra.png" alt="Card 8" /></div>
-      <div class="scroll-card1"><img src="assets/img/companies/Amazon.png" alt="Card 1 Duplicate" /></div>
-      <div class="scroll-card1"><img src="assets/img/companies/HCL.png" alt="Card 2 Duplicate" /></div>
-      <div class="scroll-card1"><img src="assets/img/companies/oracle.png" alt="Card 3 Duplicate" /></div>
-      <div class="scroll-card1"><img src="assets/img/companies/freshworks.png" alt="Card 4 Duplicate" /></div>
-      <div class="scroll-card1"><img src="assets/img/companies/tcs.png" alt="Card 5 Duplicate" /></div>
-      <div class="scroll-card1"><img src="assets/img/companies/Wipro.png" alt="Card 6 Duplicate" /></div>
-      <div class="scroll-card1"><img src="assets/img/companies/Zoho.png" alt="Card 7 Duplicate" /></div>
-      <div class="scroll-card1"><img src="assets/img/companies/Tech-mahindra.png" alt="Card 8 Duplicate" /></div>
-    </div>
-  </div>
+        <div class="marquee-container1">
+          <div class="marquee-track">
+            <div class="scroll-card1"><img src="assets/img/companies/HCL.png" alt="Card 2" /></div>
+            <div class="scroll-card1"><img src="assets/img/companies/Amazon.png" alt="Card 1" /></div>
+            <div class="scroll-card1"><img src="assets/img/companies/oracle.png" alt="Card 3" /></div>
+            <div class="scroll-card1"><img src="assets/img/companies/freshworks.png" alt="Card 4" /></div>
+            <div class="scroll-card1"><img src="assets/img/companies/tcs.png" alt="Card 5" /></div>
+            <div class="scroll-card1"><img src="assets/img/companies/Wipro.png" alt="Card 6" /></div>
+            <div class="scroll-card1"><img src="assets/img/companies/Zoho.png" alt="Card 7" /></div>
+            <div class="scroll-card1"><img src="assets/img/companies/Tech-mahindra.png" alt="Card 8" /></div>
+            <div class="scroll-card1"><img src="assets/img/companies/Amazon.png" alt="Card 1 Duplicate" /></div>
+            <div class="scroll-card1"><img src="assets/img/companies/HCL.png" alt="Card 2 Duplicate" /></div>
+            <div class="scroll-card1"><img src="assets/img/companies/oracle.png" alt="Card 3 Duplicate" /></div>
+            <div class="scroll-card1"><img src="assets/img/companies/freshworks.png" alt="Card 4 Duplicate" /></div>
+            <div class="scroll-card1"><img src="assets/img/companies/tcs.png" alt="Card 5 Duplicate" /></div>
+            <div class="scroll-card1"><img src="assets/img/companies/Wipro.png" alt="Card 6 Duplicate" /></div>
+            <div class="scroll-card1"><img src="assets/img/companies/Zoho.png" alt="Card 7 Duplicate" /></div>
+            <div class="scroll-card1"><img src="assets/img/companies/Tech-mahindra.png" alt="Card 8 Duplicate" /></div>
+          </div>
+        </div>
 
       </div>
 
@@ -212,9 +275,14 @@
             Our expert writers will craft the perfect resume for you
             <i class="fa-solid fa-quote-right ms-2"></i>
           </h2>
-          <p>Our expert writers follow a clear and personalized process to craft the perfect resume for you. It begins with a quick consultation where we understand your career goals, experience, and achievements. Based on that, our skilled professionals write a tailored resume that highlights your strengths and qualifications.We then apply modern, recruiter-friendly formatting and designs to make it visually appealing and easy to scan. Once the draft is ready, you’ll have the opportunity to review and request changes. After your approval, we deliver the final resume in multiple formats, ready to use for job applications and interviews.
+          <p>Our expert writers follow a clear and personalized process to craft the perfect resume for you. It begins
+            with a quick consultation where we understand your career goals, experience, and achievements. Based on
+            that, our skilled professionals write a tailored resume that highlights your strengths and qualifications.We
+            then apply modern, recruiter-friendly formatting and designs to make it visually appealing and easy to scan.
+            Once the draft is ready, you’ll have the opportunity to review and request changes. After your approval, we
+            deliver the final resume in multiple formats, ready to use for job applications and interviews.
           </p>
-           <a href="contact_info.html" class="read-more">
+          <a href="javascript:void(0);" class="read-more" onclick="openWhatsApp()">
             <span>Contact Us</span><i class="bi bi-arrow-right"></i>
           </a>
         </div>
@@ -281,10 +349,10 @@
     <section id="gallery" class="gallery section">
 
       <div class="container section-title" data-aos="fade-up">
-        <h2>Gallery</h2>
+        <h2>Resume</h2>
         <div style="color: #2c2a63;">
           <i class="fa-solid fa-quote-left me-2"></i>
-          <span>Check Our</span> <span class="description-title">Gallery</span>
+          <span>Check Out Our</span> <span class="description-title">Latest Resume</span>
           <i class="fa-solid fa-quote-right ms-2"></i>
         </div>
 
@@ -398,7 +466,10 @@
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>The resume was crafted beautifully with great attention to detail. It matched my expectations and personal style perfectly. The LinkedIn profile update was impressive too—it started generating positive responses soon after. I’m truly grateful to the Career Blueprint team for their exceptional work.</span>
+                  <span>The resume was crafted beautifully with great attention to detail. It matched my expectations
+                    and personal style perfectly. The LinkedIn profile update was impressive too—it started generating
+                    positive responses soon after. I’m truly grateful to the Career Blueprint team for their exceptional
+                    work.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -415,7 +486,9 @@
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>The resume writing service was excellent. The language used was professional and aligned with corporate standards. With the help of Career Blueprint, I successfully secured a job at Hexaware Technologies. Thank you for being a reliable support in my career journey.</span>
+                  <span>The resume writing service was excellent. The language used was professional and aligned with
+                    corporate standards. With the help of Career Blueprint, I successfully secured a job at Hexaware
+                    Technologies. Thank you for being a reliable support in my career journey.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -432,7 +505,10 @@
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Career Blueprint did a fantastic job updating my resume. The team was highly professional and maintained great communication throughout. The final resume was polished and impactful, improving my response rate significantly. Their LinkedIn and cover letter services were just as impressive.</span>
+                  <span>Career Blueprint did a fantastic job updating my resume. The team was highly professional and
+                    maintained great communication throughout. The final resume was polished and impactful, improving my
+                    response rate significantly. Their LinkedIn and cover letter services were just as
+                    impressive.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -449,7 +525,9 @@
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>My experience with Career Blueprint was amazing. The team handled all my inputs professionally and ensured every concern was taken care of. I was extremely satisfied with the results and will definitely use their services again. Thank you Career Blueprint for your great work.</span>
+                  <span>My experience with Career Blueprint was amazing. The team handled all my inputs professionally
+                    and ensured every concern was taken care of. I was extremely satisfied with the results and will
+                    definitely use their services again. Thank you Career Blueprint for your great work.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -466,7 +544,9 @@
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Truly impressed with the service quality. They were very responsive to changes and updates I requested. The continuous support provided by the Career Blueprint team made the experience smooth and satisfying. Thank you for your consistent efforts.</span>
+                  <span>Truly impressed with the service quality. They were very responsive to changes and updates I
+                    requested. The continuous support provided by the Career Blueprint team made the experience smooth
+                    and satisfying. Thank you for your consistent efforts.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -480,11 +560,11 @@
 
     </section>
     <section id="pricing" class="pricing section">
-    <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title" data-aos="fade-up">
         <h2>Pricing</h2>
-        <div style="color: #2c2a63;">
+        <div>
           <i class="fa-solid fa-quote-left me-2"></i>
-          <span>Check Our</span> <span class="description-title">Pricing</span>
+          <span>Plans that pay off</span> <span class="description-title1">— see our pricing.</span>
           <i class="fa-solid fa-quote-right ms-2"></i>
         </div>
 
@@ -497,24 +577,23 @@
 
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="pricing-item">
-              <h3>Basic (Fresher)</h3>
+              <h3>Basic </h3>
               <p class="description">Perfect for recent graduates, this package highlights your education and skills to
                 kickstart your career</p>
               <h4><sup>₹</sup>399<span> / Resume</span></h4>
               <a href="#" class="cta-btn">Get Now</a>
-              <p class="text-center small">Provide your brief details; our experts will contact you</p>
+              <p class="text-center small">Share a few details — our experts will be in touch shortly</p>
               <ul>
-                <li><i class="bi bi-check"></i> <span>Resume/CV</span></li>
-                <li><i class="bi bi-check"></i> <span>Delivery in word/pdf format</span></li>
-                <li><i class="bi bi-check"></i> <span>High ranking keywords enabled</span></li>
-                <li><i class="bi bi-check"></i> <span>1-2 Working days delivery</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>International Acceptance</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>ATS Optimised</span></li>
+                <li><i class="bi bi-check"></i> <span>Resume/CV (Word + PDF)</span></li>
+                <li><i class="bi bi-check"></i> <span>Cover Letter</span></li>
+                <li><i class="bi bi-check"></i> <span>LinkedIn Profile Optimization</span></li>
+                <li><i class="bi bi-check"></i> <span>Interview Prep Guide (PDF)</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Job Portal Profile Optimization Tips</span></li>
                 <li class="na"><i class="bi bi-x"></i> <span>Unlimited Revisions</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>6 months’ extended support</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Priority Support</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Cover Letter</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>LinkedIn Profile Optimization</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Priority Delivery (24–48 hrs)</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>6 Months Support</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Career Coaching Call (45 mins)</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>WhatsApp Priority Support</span></li>
               </ul>
             </div>
           </div>
@@ -525,68 +604,89 @@
 
               <div class="ribbon"><span>Popular</span></div>
 
-              <h3>Advanced (Mid Level)</h3>
+              <h3>Advanced </h3>
               <p class="description">
                 Designed for professionals with 2-5 years of experience, showcasing your achievements and career
                 progression
               </p>
               <h4><sup>₹</sup>499<span> / Resume</span></h4>
               <a href="#" class="cta-btn">Get Now</a>
-              <p class="text-center small">Provide your brief details; our experts will contact you</p>
+              <p class="text-center small">Share a few details — our experts will be in touch shortly</p>
               <ul>
-                <li><i class="bi bi-check"></i> <span>Resume/CV</span></li>
-                <li><i class="bi bi-check"></i> <span>Delivery in word/pdf format</span></li>
-                <li><i class="bi bi-check"></i> <span>High ranking keywords enabled</span></li>
-                <li><i class="bi bi-check"></i> <span>1-2 Working days delivery</span></li>
-                <li><i class="bi bi-check"></i> <span>International Acceptance</span></li>
-                <li><i class="bi bi-check"></i> <span>ATS Optimised</span></li>
+                <li><i class="bi bi-check"></i> <span>Resume/CV (Word + PDF)</span></li>
+                <li><i class="bi bi-check"></i> <span>Cover Letter</span></li>
+                <li><i class="bi bi-check"></i> <span>LinkedIn Profile Optimization</span></li>
+                <li><i class="bi bi-check"></i> <span>Interview Prep Guide (PDF)</span></li>
+                <li><i class="bi bi-check"></i> <span>Job Portal Profile Optimization Tips</span></li>
                 <li><i class="bi bi-check"></i> <span>Unlimited Revisions</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>6 months’ extended support</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Priority Support</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Cover Letter</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>LinkedIn Profile Optimization</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Priority Delivery (24–48 hrs)</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>6 Months Support</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Career Coaching Call (45 mins)</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>WhatsApp Priority Support</span></li>
               </ul>
             </div>
           </div>
-
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="pricing-item">
-              <h3>Professional (Senior Level) </h3>
+              <h3>Professional </h3>
               <p class="description">Tailored for senior professionals, emphasizing leadership roles and extensive
                 experience to make you stand out</p>
               <h4><sup>₹</sup>699<span> / Resume</span></h4>
               <a href="#" class="cta-btn">Get Now</a>
-              <p class="text-center small">Provide your brief details; our experts will contact you</p>
+              <p class="text-center small">Share a few details — our experts will be in touch shortly</p>
               <ul>
-                <li><i class="bi bi-check"></i> <span>Resume/CV</span></li>
-                <li><i class="bi bi-check"></i> <span>Delivery in word/pdf format</span></li>
-                <li><i class="bi bi-check"></i> <span>High ranking keywords enabled</span></li>
-                <li><i class="bi bi-check"></i> <span>1-2 Working days delivery</span></li>
-                <li><i class="bi bi-check"></i> <span>International Acceptance</span></li>
-                <li><i class="bi bi-check"></i> <span>ATS Optimised</span></li>
-                <li><i class="bi bi-check"></i> <span>Unlimited Revisions</span></li>
-                <li><i class="bi bi-check"></i> <span>6 months’ extended support</span></li>
-                <li><i class="bi bi-check"></i> <span>Priority Support</span></li>
+                <li><i class="bi bi-check"></i> <span>Resume/CV (Word + PDF)</span></li>
                 <li><i class="bi bi-check"></i> <span>Cover Letter</span></li>
                 <li><i class="bi bi-check"></i> <span>LinkedIn Profile Optimization</span></li>
+                <li><i class="bi bi-check"></i> <span>Interview Prep Guide (PDF)</span></li>
+                <li><i class="bi bi-check"></i> <span>Job Portal Profile Optimization Tips</span></li>
+                <li><i class="bi bi-check"></i> <span>Unlimited Revisions</span></li>
+                <li><i class="bi bi-check"></i> <span>Priority Delivery (24–48 hrs)</span></li>
+                <li><i class="bi bi-check"></i> <span>6 Months Support</span></li>
+                <li><i class="bi bi-check"></i> <span>Career Coaching Call (45 mins)</span></li>
+                <li><i class="bi bi-check"></i> <span>WhatsApp Priority Support</span></li>
               </ul>
             </div>
           </div>
 
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="pricing-item">
-              <h3>Cover Letter </h3>
-              <p class="description">A compelling cover letter that complements your resume and captures the attention
-                of hiring managers</p>
-              <h4><sup>₹</sup>99<span> / Cover Letter</span></h4>
+              <h3>Add-on Services</h3>
+              <p class="description"> 
+Boost your job search with extras like cover letter writing, LinkedIn optimization, express delivery, mock interviews, and expert career advice</p>
               <a href="#" class="cta-btn">Get Now</a>
-              <p class="text-center small">Provide your brief details; our experts will contact you</p>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Resume/CV</span></li>
-                <li><i class="bi bi-check"></i> <span>Delivery in word/pdf format</span></li>
-                <li><i class="bi bi-check"></i> <span>High ranking keywords enabled</span></li>
-                <li><i class="bi bi-check"></i> <span>1-2 Working days delivery</span></li>
-              </ul>
+              <p class="text-center small">Share a few details — our experts will be in touch shortly</p>
+              <table style="width:100%; border-collapse: collapse;">
+                <thead>
+                  <tr>
+                    <th style="text-align: left; padding: 8px; border-bottom: 1px solid #ccc;">Service</th>
+                    <th style="text-align: left; padding: 8px; border-bottom: 1px solid #ccc;">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="padding: 8px;">Career Coaching (1:1 – 45 mins)</td>
+                    <td style="padding: 8px;">₹299</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 8px;">Mock Interview (30 mins)</td>
+                    <td style="padding: 8px;">₹199</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 8px;">LinkedIn Profile Optimization</td>
+                    <td style="padding: 8px;">₹249</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 8px;">Cover Letter (standalone)</td>
+                    <td style="padding: 8px;">₹99</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 8px;">Resume Review Only</td>
+                    <td style="padding: 8px;">₹299</td>
+                  </tr>
+                </tbody>
+              </table>
+
             </div>
           </div>
 
@@ -617,7 +717,7 @@
               </p>
             </div>
 
-       <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
 
 
               <div class="faq-item faq-active">
@@ -648,34 +748,36 @@
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
 
-                <div class="faq-item">
-  <i class="faq-icon bi bi-question-circle"></i>
-  <h3>How long does it take to receive my resume?</h3>
-  <div class="faq-content">
-    <p>You will receive your professionally crafted resume within 2 to 3 business days after submitting all required details.</p>
-  </div>
-  <i class="faq-toggle bi bi-chevron-right"></i>
-</div>
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>How long does it take to receive my resume?</h3>
+                <div class="faq-content">
+                  <p>You will receive your professionally crafted resume within 2 to 3 business days after submitting
+                    all required details.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
 
-<div class="faq-item">
-  <i class="faq-icon bi bi-question-circle"></i>
-  <h3>Can I request revisions after receiving the resume?</h3>
-  <div class="faq-content">
-    <p>Yes, we offer up to two rounds of free revisions to ensure your satisfaction with the final output.</p>
-  </div>
-  <i class="faq-toggle bi bi-chevron-right"></i>
-</div>
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Can I request revisions after receiving the resume?</h3>
+                <div class="faq-content">
+                  <p>Yes, we offer up to two rounds of free revisions to ensure your satisfaction with the final output.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
 
             </div>
 
           </div>
 
           <div class="col-lg-5 order-1 order-lg-2">
-           <div style=" background: rgba(237, 201, 175, 0.55);
+            <div style=" background: rgba(237, 201, 175, 0.55);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px); padding: 15px; border-radius: 10px;object-fit:contain;">
-  <img src="assets/img/faq-img.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
-</div>
+              <img src="assets/img/faq-img.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+            </div>
 
           </div>
         </div>
@@ -782,6 +884,7 @@
       <div class="footer-column">
         <h4>Useful Links</h4>
         <p><a href="#hero">Home</a></p>
+        <p><a href="#whatweoffer">What We Offer</a></p>
         <p><a href="#howitwork">How-It-Work</a></p>
         <p><a href="#pricing">Pricing</a></p>
         <p><a href="#contact">contact</a></p>
@@ -789,18 +892,27 @@
 
       <div class="footer-column newsletter">
         <h4>Legal</h4>
-         <p><a href="privacypolicy.html">Privacy Policy</a></p>
-        <p><a href="TermsofService.html">Terms of service</a></p>
+         <p><a href="uploadresume.html">Upload Your Resume</a></p>
+          <p><a href="#">Fill In Your Details</a></p>
+               <p><a href="payment.html">Payment</a></p>
+                 <p><a href="TermsofService.html">Terms of service</a></p>
+                  <p><a href="privacypolicy.html">Privacy Policy</a></p>
       </div>
 
 
       <div class="footer-column">
         <h4>Follow Us</h4>
         <div class="social-icons">
-          <a href="#" onclick="showToast()"><i class="fab fa-twitter"></i></a>
-          <a href="#" onclick="showToast()"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" onclick="showToast()"><i class="fab fa-instagram"></i></a>
-          <a href="#" onclick="showToast()"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/people/Careers-Blueprint/61578394427960/" target="_blank"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/careers_blueprint?igsh=MXhoazNienZpc2U0Yw==" target="_blank"> <i
+              class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/careers-blueprint/" target="_blank"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/8124494755?text=Hi%2C%20I%E2%80%99ve%20completed%20the%20payment.%20Please%20confirm."
+            onclick="openWhatsApp(); return false;" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
         </div>
       </div>
 
@@ -823,9 +935,11 @@
       </div>
     </div>
   </div>
-
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="javascript:void(0);" onclick="openWhatsApp()"
+    class="scroll-top d-flex align-items-center justify-content-center" style="font-size: 24px;"
+    title="Chat on WhatsApp">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
+  </a>
 
   <div id="preloader"></div>
 
@@ -873,6 +987,13 @@
       duration: 1000,
       once: true
     });
+
+    function openWhatsApp() {
+      const phoneNumber = "8124494755";
+      const message = "Hi, I’ve completed the payment. Please confirm.";
+      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+    }
   </script>
 
 </body>
