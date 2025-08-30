@@ -7,37 +7,35 @@
   <title>CareerBlurprint</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
+  <!-- favicon-image -->
   <link href="favicon-32x32.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- fontawesome-cdn -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+  <!-- google-fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-
+  <!-- CSS-Style-sheets -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
 <body class="index-page">
+  <!-- Navbar starts -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="d-flex align-items-center justify-content-between w-100 px-4" style="padding-left: 0 !important;">
-
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="CB-logo.png" alt="Career Blueprint Logo"
+        <img src="assets/img/images/CB-logo.png" alt="Career Blueprint Logo"
           style="height: 60px; width: 110px; object-fit: cover; margin-top: 10px;">
-
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
@@ -61,12 +59,13 @@
             <i class="fa-brands fa-whatsapp"></i>
           </a>
         </div>
-
       </nav>
       <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
     </div>
   </header>
+  <!-- Navbar-Ends -->
 
+  <!-- Home-section starts -->
   <div class="home" id="hero">
     <div class="container2">
       <div class="text-section">
@@ -82,17 +81,18 @@
           shortlisted, and get hired faster.</p>
         <div class="d-flex">
           <a href="#whatweoffer" class="btn-get-started">Get Started</a>
-          <a href="javascript:void(0);" class="btn-get-started" onclick="openWhatsApp()">Chat Us</a>
+          <a href="javascript:void(0);" class="btn-get-started"
+            onclick="openWhatsApp('Hi, I’d like to know more about your services.')">
+            Chat Us
+          </a>
         </div>
       </div>
-
       <div class="image-section">
-        <img src="resume.png" class="resume-bg" alt="Resume Background" />
-        <img src="left.png" class="floating-left" alt="Floating Left Panel" />
-        <img src="right.png" class="floating-right" alt="Floating Right Panel" />
+        <img src="assets/img/images/resume.png" class="resume-bg" alt="Resume Background" />
+        <img src="assets/img/images/left.png" class="floating-left" alt="Floating Left Panel" />
+        <img src="assets/img/images/right.png" class="floating-right" alt="Floating Right Panel" />
       </div>
     </div>
-
     <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
       <defs>
         <path id="wave-path" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z" />
@@ -108,8 +108,10 @@
       </g>
     </svg>
   </div>
+  <!-- Home-section Ends -->
 
 
+  <!-- AboutUS section starts -->
   <main class="main">
     <section class="about-us" id="about">
       <div class="about-container">
@@ -129,10 +131,10 @@
             strengths and achievements,
             ensuring you make a lasting impression on potential employers.
           </p>
-          <a href="javascript:void(0);" class="read-more" onclick="openWhatsApp()">
+          <a href="javascript:void(0);" class="read-more"
+            onclick="openWhatsApp('Hello, I’m interested in learning more about your company and services.')">
             <span>Contact Us</span><i class="bi bi-arrow-right"></i>
           </a>
-
         </div>
 
         <div class="about-right" data-aos="fade-left">
@@ -143,7 +145,6 @@
                 stands out in your specific field.</p>
             </div>
           </div>
-
           <div class="timeline-card">
             <div class="year-banner1"><i class="bi bi-clipboard-pulse"></i>&nbsp;Tailored Resume Design</div>
             <div class="card-body1">
@@ -171,61 +172,244 @@
         </div>
       </div>
     </section>
+    <!-- AboutUS section Ends -->
 
-    <h2 style="color: #2c2a63;text-align: left; margin-bottom: 20px; font-weight: 700; padding-left: 50px;">
+    <!-- What we offer section starts -->
+    <!-- <h2 style="color: #2c2a63;text-align: left; margin-bottom: 20px; font-weight: 700; padding-left: 50px;">
       <i class="fa-solid fa-quote-left me-2" id="whatweoffer"></i>
       What we offer
       <i class="fa-solid fa-quote-right ms-2"></i>
     </h2>
+
     <div class="services">
       <div class="service-card">
-        <img src="Interview prep.jpeg" alt="Interview Prep" class="service-image" />
+        <img src="assets/img/images/Interview prep.jpeg" alt="Interview Prep" class="service-image" />
         <div class="service-text">
-          <div class="service-heading"> Interview Prep</div>
-          <div class="service-description">
-            <div class="service-subheading"><strong>Ace Every Interview with Confidence</strong>
-              Master common questions, body language, and real-time mock sessions to impress every recruiter you meet.
-            </div>
+          <div class="service-heading"><a href="interview-prep.html">Interview Preparation</a></div>
+          <div class="service-subheading">
+            <strong>Practice, polish, and perform like a pro in every interview.</strong>
           </div>
+          <div class="service-description">
+            <ul>
+              <li>Mock sessions with real-time feedback</li>
+              <li>Body language & communication mastery</li>
+              <li>Answers to common & tough questions</li>
+            </ul>
+          </div>
+          <a href="#" class="cta-btn1"
+            onclick="openWhatsApp('Hi, I’m interested in your Interview Preparation service. Can you share more details?')">
+            Know More <i class="fas fa-arrow-right"></i>
+          </a>
+
         </div>
       </div>
 
       <div class="service-card">
-        <img src="Career coaching.jpeg" alt="Career Coaching" class="service-image" />
+        <img src="assets/img/images/Career coaching.jpeg" alt="Career Coaching" class="service-image" />
         <div class="service-text">
-          <div class="service-heading"> Career Coaching</div>
-          <div class="service-description">
-            <div class="service-subheading"><strong>Find Direction. Build Your Dream Career.</strong>
-              Get personalized 1:1 coaching to identify your goals, align your skills, and map your perfect career path.
-            </div>
+          <div class="service-heading"><a href="Careercoach.html">Career Coaching</a></div>
+          <div class="service-subheading">
+            <strong> Get expert guidance to discover your path and reach your goals.</strong>
           </div>
+          <div class="service-description">
+            <ul>
+              <li>1:1 personalized career coaching</li>
+              <li>Strength & skill assessment</li>
+              <li>Clear roadmap to your dream role</li>
+            </ul>
+          </div>
+          <a href="#" class="cta-btn1"
+            onclick="openWhatsApp('Hello, I’d like to know more about your Career Coaching sessions.')">
+            Know More <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
       </div>
 
       <div class="service-card">
-        <img src="resume.jpeg" alt="Resume Review" class="service-image" />
+        <img src="assets/img/images/resume.jpeg" alt="Resume Review" class="service-image" />
         <div class="service-text">
-          <div class="service-heading"> Resume Review</div>
-          <div class="service-description">
-            <div class="service-subheading"><strong>Your Resume, Reimagined for Results</strong>
-              Receive detailed feedback and expert suggestions to turn your existing resume into a recruiter magnet.
-            </div>
+          <div class="service-heading"><a href="resumewriting.html">Resume Review & Building</a></div>
+          <div class="service-subheading">
+            <strong>Turn your resume into a recruiter magnet.</strong>
           </div>
+          <div class="service-description">
+            <ul>
+              <li>ATS-friendly formatting & design</li>
+              <li>Highlight achievements & strengths</li>
+              <li>Detailed expert feedback & revisions</li>
+            </ul>
+          </div>
+          <a href="#" class="cta-btn1"
+            onclick="openWhatsApp('Hi, I need help with my resume. Can you tell me about your Resume Review service?')">
+            Know More <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
       </div>
 
       <div class="service-card">
-        <img src="Network building.jpeg" alt="Networking Tips" class="service-image" />
+        <img src="assets/img/images/Network building.jpeg" alt="Networking Tips" class="service-image" />
         <div class="service-text">
-          <div class="service-heading"> Networking Tips</div>
-          <div class="service-description">
-            <div class="service-subheading"><strong>Grow Your Network, Unlock Opportunities</strong>
-              Learn smart strategies to connect with HRs, hiring managers, and professionals who can open new career
-              doors.</div>
+          <div class="service-heading"><a href="networking.html">Networking Tips & Strategies</a></div>
+          <div class="service-subheading">
+            <strong> Learn to connect smart and open career doors.</strong>
           </div>
+          <div class="service-description">
+            <ul>
+              <li>Proven LinkedIn & networking hacks</li>
+              <li>Tips to connect with HRs & recruiters</li>
+              <li>Build strong, lasting professional ties</li>
+            </ul>
+          </div>
+          <a href="#" class="cta-btn1"
+            onclick="openWhatsApp('Hello, I’m curious about your Networking Tips. Can you guide me on how it works?')">
+            Know More <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
+      </div>
+    </div> -->
+    <!-- What we offer section Ends -->
+
+
+<!-- What we offer section starts -->
+<h2 style="color: #2c2a63;text-align: left; margin-bottom: 20px; font-weight: 700; padding-left: 50px;">
+  <i class="fa-solid fa-quote-left me-2" id="whatweoffer"></i>
+  What we offer
+  <i class="fa-solid fa-quote-right ms-2"></i>
+</h2>
+
+<div class="services">
+
+  <!-- Interview Preparation -->
+  <div class="service-card">
+    <div class="image-slider">
+      <div class="slides">
+        <img src="assets/img/images/Interview prep.jpeg" alt="Interview Prep 1" />
+        <img src="assets/img/images/Code.png" alt="Interview Prep 2" />
+        <img src="assets/img/images/interviewtips.png" alt="Interview Prep 3" />
+        <img src="assets/img/images/Instantly.png" alt="Interview Prep 4" />
+        <img src="assets/img/images/Analyze.png" alt="Interview Prep 5" />
+        <img src="assets/img/images/feedback.jpg" alt="Interview Prep 6" />
       </div>
     </div>
+    <div class="service-text">
+      <div class="service-heading"><a href="interview-prep.html">Interview Preparation</a></div>
+      <div class="service-subheading">
+        <strong>Practice, polish, and perform like a pro in every interview.</strong>
+      </div>
+      <div class="service-description">
+        <ul>
+          <li>Mock sessions with real-time feedback</li>
+          <li>Body language & communication mastery</li>
+          <li>Answers to common & tough questions</li>
+        </ul>
+      </div>
+      <a href="#" class="cta-btn1"
+        onclick="openWhatsApp('Hi, I’m interested in your Interview Preparation service. Can you share more details?')">
+        Know More <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Career Coaching -->
+  <div class="service-card">
+    <div class="image-slider">
+      <div class="slides">
+        <img src="assets/img/images/Career coaching.jpeg" alt="Career Coaching 1" />
+        <img src="assets/img/images/section1 (1).png" alt="Career Coaching 2" />
+        <img src="assets/img/images/interview.png" alt="Career Coaching 3" />
+        <img src="assets/img/images/Trainee.png" alt="Career Coaching 4" />
+        <img src="assets/img/images/Analyze.png" alt="Career Coaching 5" />
+        <img src="assets/img/images/feedback.jpg" alt="Career Coaching 6" />
+      </div>
+    </div>
+    <div class="service-text">
+      <div class="service-heading"><a href="Careercoach.html">Career Coaching</a></div>
+      <div class="service-subheading">
+        <strong>Get expert guidance to discover your path and reach your goals.</strong>
+      </div>
+      <div class="service-description">
+        <ul>
+          <li>1:1 personalized career coaching</li>
+          <li>Strength & skill assessment</li>
+          <li>Clear roadmap to your dream role</li>
+        </ul>
+      </div>
+      <a href="#" class="cta-btn1"
+        onclick="openWhatsApp('Hello, I’d like to know more about your Career Coaching sessions.')">
+        Know More <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Resume Review -->
+  <div class="service-card">
+    <div class="image-slider">
+      <div class="slides">
+        <img src="assets/img/images/resume.jpeg" alt="Resume Review 1" />
+        <img src="assets/img/images/section1.png" alt="Resume Review 2" />
+        <img src="assets/img/images/section2.png" alt="Resume Review 3" />
+        <img src="assets/img/images/section3.png" alt="Resume Review 4" />
+        <img src="assets/img/images/Analyze.png" alt="Resume Review 5" />
+         <img src="assets/img/images/feedback.jpg" alt="Resume Review 6" />
+      </div>
+    </div>
+    <div class="service-text">
+      <div class="service-heading"><a href="resumewriting.html">Resume Review & Building</a></div>
+      <div class="service-subheading">
+        <strong>Turn your resume into a recruiter magnet.</strong>
+      </div>
+      <div class="service-description">
+        <ul>
+          <li>ATS-friendly formatting & design</li>
+          <li>Highlight achievements & strengths</li>
+          <li>Detailed expert feedback & revisions</li>
+        </ul>
+      </div>
+      <a href="#" class="cta-btn1"
+        onclick="openWhatsApp('Hi, I need help with my resume. Can you tell me about your Resume Review service?')">
+        Know More <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Networking Tips -->
+  <div class="service-card">
+    <div class="image-slider">
+      <div class="slides">
+        <img src="assets/img/images/Network building.jpeg" alt="Networking Tips 1" />
+        <img src="assets/img/images/networking1.png" alt="Networking Tips 2" />
+        <img src="assets/img/images/networking2.png" alt="Networking Tips 3" />
+        <img src="assets/img/images/networking3.png" alt="Networking Tips 4" />
+        <img src="assets/img/images/Analyze.png" alt="Networking Tips 5" />
+            <img src="assets/img/images/feedback.jpg" alt="Networking Tips 6" />
+      </div>
+    </div>
+    <div class="service-text">
+      <div class="service-heading"><a href="networking.html">Networking Tips & Strategies</a></div>
+      <div class="service-subheading">
+        <strong>Learn to connect smart and open career doors.</strong>
+      </div>
+      <div class="service-description">
+        <ul>
+          <li>Proven LinkedIn & networking hacks</li>
+          <li>Tips to connect with HRs & recruiters</li>
+          <li>Build strong, lasting professional ties</li>
+        </ul>
+      </div>
+      <a href="#" class="cta-btn1"
+        onclick="openWhatsApp('Hello, I’m curious about your Networking Tips. Can you guide me on how it works?')">
+        Know More <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+</div>
+<!-- What we offer section Ends -->
+
+
+
+
+    <!--Get hired at top companies section starts -->
     <section id="features" class="features section">
 
       <div class="container">
@@ -236,7 +420,6 @@
               Get hired at top companies — 76% faster
               <i class="fa-solid fa-quote-right ms-2"></i>
             </h2>
-
         </div>
 
         <div class="marquee-container1">
@@ -259,11 +442,11 @@
             <div class="scroll-card1"><img src="assets/img/companies/Tech-mahindra.png" alt="Card 8 Duplicate" /></div>
           </div>
         </div>
-
       </div>
-
     </section>
+    <!--Get hired at top companies section Ends -->
 
+    <!-- How It Works section starts -->
     <section id="howitwork" class="about section">
       <div class="section-howitswork">
         <div class="col-xl-5 content">
@@ -282,7 +465,8 @@
             Once the draft is ready, you’ll have the opportunity to review and request changes. After your approval, we
             deliver the final resume in multiple formats, ready to use for job applications and interviews.
           </p>
-          <a href="javascript:void(0);" class="read-more" onclick="openWhatsApp()">
+          <a href="javascript:void(0);" class="read-more"
+            onclick="openWhatsApp('Hi, could you explain how your process works?')">
             <span>Contact Us</span><i class="bi bi-arrow-right"></i>
           </a>
         </div>
@@ -341,13 +525,13 @@
             </div>
           </div>
         </div>
-
-
       </div>
-
     </section>
-    <section id="gallery" class="gallery section">
+    <!-- How It Works section Ends -->
 
+
+    <!-- Resume section starts -->
+    <section id="gallery" class="gallery section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
         <div style="color: #2c2a63;">
@@ -355,13 +539,9 @@
           <span>Check Out Our</span> <span class="description-title">Latest Resume</span>
           <i class="fa-solid fa-quote-right ms-2"></i>
         </div>
-
       </div>
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row g-0">
-
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-1.jpg" class="glightbox" data-gallery="images-gallery">
@@ -369,7 +549,6 @@
               </a>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-2.webp" class="glightbox" data-gallery="images-gallery">
@@ -377,7 +556,6 @@
               </a>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-3.webp" class="glightbox" data-gallery="images-gallery">
@@ -385,7 +563,6 @@
               </a>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery">
@@ -393,7 +570,6 @@
               </a>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-5.webp" class="glightbox" data-gallery="images-gallery">
@@ -401,7 +577,6 @@
               </a>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-6.webp" class="glightbox" data-gallery="images-gallery">
@@ -409,7 +584,6 @@
               </a>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-7.webp" class="glightbox" data-gallery="images-gallery">
@@ -417,7 +591,6 @@
               </a>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery">
@@ -425,18 +598,15 @@
               </a>
             </div>
           </div>
-
         </div>
-
       </div>
-
     </section>
+    <!-- Resume section Ends -->
+
+    <!-- Testimonials section starts -->
     <section id="testimonials" class="testimonials section dark-background">
-
-      <img src="assets/img/testimonials-bg.webp" class="testimonials-bg" alt="">
-
+      <img src="assets/img/testimonials/testimonials-bg.webp" class="testimonials-bg" alt="">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="swiper init-swiper">
           <script type="application/json" class="swiper-config">
             {
@@ -454,7 +624,6 @@
             }
           </script>
           <div class="swiper-wrapper">
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-1.png" class="testimonial-img" alt="">
@@ -474,7 +643,6 @@
                 </p>
               </div>
             </div>
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-2.png" class="testimonial-img" alt="">
@@ -493,7 +661,6 @@
                 </p>
               </div>
             </div>
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-3.png" class="testimonial-img" alt="">
@@ -513,7 +680,6 @@
                 </p>
               </div>
             </div>
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
@@ -532,7 +698,6 @@
                 </p>
               </div>
             </div>
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-5.png" class="testimonial-img" alt="">
@@ -551,14 +716,14 @@
                 </p>
               </div>
             </div>
-
           </div>
           <div class="swiper-pagination"></div>
         </div>
-
       </div>
-
     </section>
+    <!-- Testimonials section Ends -->
+
+    <!-- Pricing section starts -->
     <section id="pricing" class="pricing section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Pricing</h2>
@@ -567,38 +732,34 @@
           <span>Plans that pay off</span> <span class="description-title1">— see our pricing.</span>
           <i class="fa-solid fa-quote-right ms-2"></i>
         </div>
-
       </div>
-
-
       <div class="container">
-
         <div class="row gy-4">
-
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="pricing-item">
               <h3>Basic </h3>
               <p class="description">Perfect for recent graduates, this package highlights your education and skills to
                 kickstart your career</p>
               <h4><sup>₹</sup>399<span> / Resume</span></h4>
-              <a href="#" class="cta-btn">Get Now</a>
+              <a href="#" class="cta-btn"
+                onclick="openWhatsApp('Hello, I have a question about your pricing and packages.')">
+                Get Now
+              </a>
               <p class="text-center small">Share a few details — our experts will be in touch shortly</p>
               <ul>
                 <li><i class="bi bi-check"></i> <span>Resume/CV (Word + PDF)</span></li>
                 <li><i class="bi bi-check"></i> <span>Cover Letter</span></li>
-                <li><i class="bi bi-check"></i> <span>LinkedIn Profile Optimization</span></li>
                 <li><i class="bi bi-check"></i> <span>Interview Prep Guide (PDF)</span></li>
+                <li><i class="bi bi-check"></i> <span>1-2 Revisions</span></li>
                 <li class="na"><i class="bi bi-x"></i> <span>Job Portal Profile Optimization Tips</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Unlimited Revisions</span></li>
                 <li class="na"><i class="bi bi-x"></i> <span>Priority Delivery (24–48 hrs)</span></li>
                 <li class="na"><i class="bi bi-x"></i> <span>6 Months Support</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>LinkedIn Profile Optimization</span></li>
                 <li class="na"><i class="bi bi-x"></i> <span>Career Coaching Call (45 mins)</span></li>
                 <li class="na"><i class="bi bi-x"></i> <span>WhatsApp Priority Support</span></li>
               </ul>
             </div>
           </div>
-
-
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="pricing-item featured position-relative">
 
@@ -610,17 +771,20 @@
                 progression
               </p>
               <h4><sup>₹</sup>499<span> / Resume</span></h4>
-              <a href="#" class="cta-btn">Get Now</a>
+              <a href="#" class="cta-btn"
+                onclick="openWhatsApp('Hello, I have a question about your pricing and packages.')">
+                Get Now
+              </a>
               <p class="text-center small">Share a few details — our experts will be in touch shortly</p>
               <ul>
                 <li><i class="bi bi-check"></i> <span>Resume/CV (Word + PDF)</span></li>
                 <li><i class="bi bi-check"></i> <span>Cover Letter</span></li>
-                <li><i class="bi bi-check"></i> <span>LinkedIn Profile Optimization</span></li>
                 <li><i class="bi bi-check"></i> <span>Interview Prep Guide (PDF)</span></li>
+                <li><i class="bi bi-check"></i> <span>2-4 Revisions</span></li>
                 <li><i class="bi bi-check"></i> <span>Job Portal Profile Optimization Tips</span></li>
-                <li><i class="bi bi-check"></i> <span>Unlimited Revisions</span></li>
                 <li class="na"><i class="bi bi-x"></i> <span>Priority Delivery (24–48 hrs)</span></li>
                 <li class="na"><i class="bi bi-x"></i> <span>6 Months Support</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>LinkedIn Profile Optimization</span></li>
                 <li class="na"><i class="bi bi-x"></i> <span>Career Coaching Call (45 mins)</span></li>
                 <li class="na"><i class="bi bi-x"></i> <span>WhatsApp Priority Support</span></li>
               </ul>
@@ -632,28 +796,31 @@
               <p class="description">Tailored for senior professionals, emphasizing leadership roles and extensive
                 experience to make you stand out</p>
               <h4><sup>₹</sup>699<span> / Resume</span></h4>
-              <a href="#" class="cta-btn">Get Now</a>
+              <a href="#" class="cta-btn"
+                onclick="openWhatsApp('Hello, I have a question about your pricing and packages.')">
+                Get Now
+              </a>
               <p class="text-center small">Share a few details — our experts will be in touch shortly</p>
               <ul>
                 <li><i class="bi bi-check"></i> <span>Resume/CV (Word + PDF)</span></li>
                 <li><i class="bi bi-check"></i> <span>Cover Letter</span></li>
-                <li><i class="bi bi-check"></i> <span>LinkedIn Profile Optimization</span></li>
                 <li><i class="bi bi-check"></i> <span>Interview Prep Guide (PDF)</span></li>
+                <li><i class="bi bi-check"></i> <span>4-6 Revisions</span></li>
                 <li><i class="bi bi-check"></i> <span>Job Portal Profile Optimization Tips</span></li>
-                <li><i class="bi bi-check"></i> <span>Unlimited Revisions</span></li>
                 <li><i class="bi bi-check"></i> <span>Priority Delivery (24–48 hrs)</span></li>
                 <li><i class="bi bi-check"></i> <span>6 Months Support</span></li>
+                <li><i class="bi bi-check"></i> <span>LinkedIn Profile Optimization</span></li>
                 <li><i class="bi bi-check"></i> <span>Career Coaching Call (45 mins)</span></li>
                 <li><i class="bi bi-check"></i> <span>WhatsApp Priority Support</span></li>
               </ul>
             </div>
           </div>
-
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="pricing-item">
               <h3>Add-on Services</h3>
-              <p class="description"> 
-Boost your job search with extras like cover letter writing, LinkedIn optimization, express delivery, mock interviews, and expert career advice</p>
+              <p class="description">
+                Boost your job search with extras like cover letter writing, LinkedIn optimization, express delivery,
+                mock interviews, and expert career advice</p>
               <a href="#" class="cta-btn">Get Now</a>
               <p class="text-center small">Share a few details — our experts will be in touch shortly</p>
               <table style="width:100%; border-collapse: collapse;">
@@ -686,40 +853,30 @@ Boost your job search with extras like cover letter writing, LinkedIn optimizati
                   </tr>
                 </tbody>
               </table>
-
             </div>
           </div>
-
         </div>
-
       </div>
-
     </section>
+    <!-- Pricing section Ends -->
 
+    <!-- Faq section starts -->
     <section id="faq" class="faq section light-background">
-
       <div class="container-fluid">
-
         <div class="row gy-4">
-
           <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-
             <div class="content" data-aos="fade-up" data-aos-delay="100">
               <h2 style="color: #2c2a63; font-size: 28px;">
                 <i class="fa-solid fa-quote-left me-2"></i>
                 <span>Frequently Asked </span><strong>Questions</strong>
                 <i class="fa-solid fa-quote-right ms-2"></i>
               </h2>
-
               <p>
                 Our FAQ section is designed to provide quick and clear answers to common queries. Whether you’re curious
                 about our services, pricing, or delivery times, you’ll find all the information you need right here.
               </p>
             </div>
-
             <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
-
-
               <div class="faq-item faq-active">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>How long does it take to get my resume?</h3>
@@ -728,7 +885,6 @@ Boost your job search with extras like cover letter writing, LinkedIn optimizati
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
-
               <div class="faq-item">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>Can I request revisions?</h3>
@@ -738,7 +894,6 @@ Boost your job search with extras like cover letter writing, LinkedIn optimizati
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
-
               <div class="faq-item">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>What formats do you provide?</h3>
@@ -747,7 +902,6 @@ Boost your job search with extras like cover letter writing, LinkedIn optimizati
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
-
               <div class="faq-item">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>How long does it take to receive my resume?</h3>
@@ -757,7 +911,6 @@ Boost your job search with extras like cover letter writing, LinkedIn optimizati
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
-
               <div class="faq-item">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>Can I request revisions after receiving the resume?</h3>
@@ -767,24 +920,22 @@ Boost your job search with extras like cover letter writing, LinkedIn optimizati
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
-
             </div>
-
           </div>
-
           <div class="col-lg-5 order-1 order-lg-2">
             <div style=" background: rgba(237, 201, 175, 0.55);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px); padding: 15px; border-radius: 10px;object-fit:contain;">
-              <img src="assets/img/faq-img.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+              <img src="assets/img/testimonials/faq-img.png" class="img-fluid" alt="" data-aos="zoom-in"
+                data-aos-delay="100">
             </div>
-
           </div>
         </div>
-
       </div>
-
     </section>
+    <!-- Faq section Ends -->
+
+    <!-- Contact Us section starts -->
     <section id="contact" class="contact section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
@@ -793,13 +944,9 @@ Boost your job search with extras like cover letter writing, LinkedIn optimizati
           <span>Check Our</span> <span class="description-title">Contact</span>
           <i class="fa-solid fa-quote-right ms-2"></i>
         </div>
-
       </div>
-
       <div class="container" data-aos="fade" data-aos-delay="100">
-
         <div class="row gy-4">
-
           <div class="col-lg-4">
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
@@ -808,7 +955,6 @@ Boost your job search with extras like cover letter writing, LinkedIn optimizati
                 <p>Chennai, Tamil Nadu, India</p>
               </div>
             </div>
-
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
@@ -816,7 +962,6 @@ Boost your job search with extras like cover letter writing, LinkedIn optimizati
                 <p>+91 81244 94755</p>
               </div>
             </div>
-
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
@@ -824,63 +969,48 @@ Boost your job search with extras like cover letter writing, LinkedIn optimizati
                 <p>infinityjob.ijob@gmail.com</p>
               </div>
             </div>
-
           </div>
-
           <div class="col-lg-8">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
               data-aos-delay="200">
               <div class="row gy-4">
-
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control custom-input" placeholder="Your Name" required>
                 </div>
-
                 <div class="col-md-6">
                   <input type="email" name="email" class="form-control custom-input" placeholder="Your Email" required>
                 </div>
-
                 <div class="col-md-12">
                   <input type="text" name="subject" class="form-control custom-input" placeholder="Subject" required>
                 </div>
-
                 <div class="col-md-12">
                   <textarea name="message" class="form-control custom-input" rows="6" placeholder="Message"
                     required></textarea>
                 </div>
-
-
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
-
                   <button type="submit">Send Message</button>
                 </div>
-
               </div>
             </form>
           </div>
-
         </div>
-
       </div>
-
     </section>
-
   </main>
+  <!-- Contact Us section Ends -->
 
-
+  <!-- Footer section starts -->
   <footer class="footer">
     <div class="footer-container">
-
       <div class="footer-column">
         <h4>Career Blueprint</h4>
         <p>Chennai<br />Tamil Nadu, India</p>
         <p><strong>Phone:</strong> +91 81244 94755</p>
         <p><strong>Email:</strong> infinityjob.job@gmail.com</p>
       </div>
-
       <div class="footer-column">
         <h4>Useful Links</h4>
         <p><a href="#hero">Home</a></p>
@@ -889,17 +1019,14 @@ Boost your job search with extras like cover letter writing, LinkedIn optimizati
         <p><a href="#pricing">Pricing</a></p>
         <p><a href="#contact">contact</a></p>
       </div>
-
       <div class="footer-column newsletter">
         <h4>Legal</h4>
-         <p><a href="uploadresume.html">Upload Your Resume</a></p>
-          <p><a href="#">Fill In Your Details</a></p>
-               <p><a href="payment.html">Payment</a></p>
-                 <p><a href="TermsofService.html">Terms of service</a></p>
-                  <p><a href="privacypolicy.html">Privacy Policy</a></p>
+        <p><a href="uploadresume.html">Upload Your Resume</a></p>
+        <p><a href="Details.html">Fill In Your Details</a></p>
+        <p><a href="payment.html">Payment</a></p>
+        <p><a href="TermsofService.html">Terms of service</a></p>
+        <p><a href="privacypolicy.html">Privacy Policy</a></p>
       </div>
-
-
       <div class="footer-column">
         <h4>Follow Us</h4>
         <div class="social-icons">
@@ -915,34 +1042,23 @@ Boost your job search with extras like cover letter writing, LinkedIn optimizati
           </a>
         </div>
       </div>
-
     </div>
-
     <div class="footer-bottom">
       &copy; Copyright <strong>Career Blueprint</strong>. All Rights Reserved
     </div>
   </footer>
+  <!-- Footer section Ends -->
 
-  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-    <div id="socialToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="toast-header">
-        <strong class="me-auto">Stay Tuned</strong>
-        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-      </div>
-      <div class="toast-body" style="color: #2c2a63; background-color: #EDC9AF; font-weight: 600;">
-        As of now, we don't have an active social media presence. Exciting updates are on the horizon, and we'll be
-        joining your favorite platforms soon. Stay tuned for more from Career Blueprint!
-      </div>
-    </div>
-  </div>
-  <a href="javascript:void(0);" onclick="openWhatsApp()"
+  <!-- WhatsApp Icon -->
+  <a href="javascript:void(0);" onclick="openWhatsApp('Hi, I’d like to get in touch regarding your services.')"
     class="scroll-top d-flex align-items-center justify-content-center" style="font-size: 24px;"
     title="Chat on WhatsApp">
     <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
   </a>
+  <!-- WhatsApp Icon -->
 
+  <!-- Scripts starts -->
   <div id="preloader"></div>
-
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -950,47 +1066,18 @@ Boost your job search with extras like cover letter writing, LinkedIn optimizati
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
   <script src="assets/js/main.js"></script>
-
-
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <!-- Scripts Ends -->
 
   <script>
-
-    function showToast() {
-      var toastElement = document.getElementById('socialToast');
-      var toast = new bootstrap.Toast(toastElement);
-      toast.show();
-    }
-
-    document.getElementById('twitterLink').addEventListener('click', function (e) {
-      e.preventDefault();
-      showToast();
-    });
-    document.getElementById('facebookLink').addEventListener('click', function (e) {
-      e.preventDefault();
-      showToast();
-    });
-    document.getElementById('instagramLink').addEventListener('click', function (e) {
-      e.preventDefault();
-      showToast();
-    });
-    document.getElementById('linkedinLink').addEventListener('click', function (e) {
-      e.preventDefault();
-      showToast();
-    });
-
-
     AOS.init({
       duration: 1000,
       once: true
     });
-
-    function openWhatsApp() {
+    function openWhatsApp(message) {
       const phoneNumber = "8124494755";
-      const message = "Hi, I’ve completed the payment. Please confirm.";
       const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
       window.open(url, "_blank");
     }
