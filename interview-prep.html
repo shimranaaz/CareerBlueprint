@@ -227,10 +227,11 @@
             gap: 70px;
         }
 
-        .heading {
-            text-align: center;
-            margin-top: 40px;
-        }
+       .heading {
+    text-align: center;
+    margin-top: 40px;
+    padding: 2px;
+}
 
         .heading h2 {
             font-size: 2rem;
@@ -446,6 +447,7 @@
                 font-size: 12px;
                 padding: 8px 16px;
             }
+        
         }
 
         @media (max-width: 768px) {
@@ -502,6 +504,12 @@
                 transform: translateY(0%);
             }
         }
+
+   .faq {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+}
     </style>
 
 </head>
@@ -573,11 +581,6 @@
                 <p>10k+ Active Learners</p>
             </div>
         </div>
-        <!-- Right -->
-        <!-- <div class="right">
-      <div class="bg-effect"></div>
-      <img src="https://img.freepik.com/free-photo/group-happy-students_23-2147669475.jpg" alt="Students">
-    </div> -->
         <div class="right">
             <div class="bg-effect"></div>
             <video autoplay muted loop playsinline>
@@ -590,8 +593,9 @@
     <div class="heading">
         <h2>High-Level Unique Version</h2>
         <strong>Step Beyond Preparation — Into Performance.</strong>
-        <p>Immerse yourself in a lifelike, professional-grade interview arena built to sharpen your skills, boost your
-            confidence, and position you for success</p>
+        <p>Don’t just get ready for interviews—learn to shine in them. Our immersive interview prep sessions simulate
+            real-world interview settings, helping you practice, gain confidence, and deliver answers that leave a
+            lasting impression.</p>
     </div>
 
     <section class="section">
@@ -604,12 +608,12 @@
         <div class="text">
             <h3>Code in Real-World Conditions</h3>
             <ul class="list">
-                <li>Master multiple languages in a sleek, pro-grade editor</li>
-                <li>Leverage industry-standard tools that mirror actual job requirements</li>
-                <li>Tackle coding challenges built for competitive tests and technical rounds</li>
-                <li>Experience environments that simulate real-world problem-solving, not just practice</li>
+                <li>Solve coding challenges in a clean, professional editor</li>
+                <li>Work with tools that mirror real company environments</li>
+                <li>Sharpen your logic with problems designed for real tests, not just practice sheets</li>
+                <li>Experience the pressure and pace of actual technical rounds</li>
             </ul>
-            <a href="#" class="btn3">Schedule Your Session Now</a>
+            <a href="#" class="btn3">Start Practicing Now</a>
         </div>
     </section>
 
@@ -621,11 +625,11 @@
         <div class="text">
             <h3>Your Interview, As Real As It Gets</h3>
             <ul class="list">
-                <li>Engage in professional-grade virtual interviews with zero friction</li>
-                <li>Experience crisp video and audio that make interactions seamless and authentic</li>
-                <li>Gain a unique edge with built-in playback to review your performance and refine your skills</li>
+                <li>Crisp video and audio for a seamless experience</li>
+                <li>Zero technical hassle—just focus on performing</li>
+                <li>Unique replay option so you can review your answers and improve instantly</li>
             </ul>
-            <a href="#" class="btn3">Schedule Your Session Now</a>
+            <a href="#" class="btn3">Book a Mock Interview</a>
         </div>
 
         <!-- Right side Image -->
@@ -645,12 +649,12 @@
         <div class="text">
             <h3>Where Ideas Take Shape — Instantly</h3>
             <ul class="list">
-                <li>Brainstorm and solve problems in an intuitive, interactive space</li>
-                <li>Use drag, draw, and text tools to bring your thought process to life</li>
-                <li>Collaborate easily on design, logic, and system discussions</li>
-                <li>Save, share, and revisit your solutions to track your growth</li>
+                <li>Sketch, draw, or map out system designs live</li>
+                <li>Brainstorm solutions in an interactive space</li>
+                <li>Collaborate smoothly during logic or problem-solving discussions</li>
+                <li>Save and revisit your solutions to track growth over time</li>
             </ul>
-            <a href="#" class="btn3">Schedule Your Session Now</a>
+            <a href="#" class="btn3">Practice Instantly</a>
         </div>
     </section>
 
@@ -659,9 +663,9 @@
         <!-- Left Side Text -->
         <div class="feedback-text">
             <h2>Analyze your <span>performance</span></h2>
-            <p>Review your recorded mock interview and gain instant insights.
-                Identify areas for improvement and refine your responses before the real interview.</p>
-            <a href="#" class="feedback-btn">Try Our Tool</a>
+            <p>Go through your mock interview results, understand your strengths, and identify areas to improve. Get
+                clear insights to boost your confidence for the real interview.</p>
+            <a href="#" class="feedback-btn">Get My Analysis</a>
         </div>
 
         <!-- Right Side Image -->
@@ -674,20 +678,106 @@
     <section class="feedback-section feedback-alt">
         <!-- Left Side Image -->
         <div class="feedback-image">
-            <img src="assets/img/images/feedback.jpg"
-                alt="AI Interview Insights">
+            <img src="assets/img/images/feedback.jpg" alt="AI Interview Insights">
         </div>
 
         <!-- Right Side Text -->
         <div class="feedback-text">
             <h2>Get <span>Expert-Guided</span> interview feedback</h2>
-            <p>Receive in-depth evaluation from seasoned interview coaches.
-                Get scored on clarity, confidence, tone, and impact — with actionable
-                insights that help you refine your responses and perform at
-                your absolute best</p>
-            <a href="#" class="feedback-btn">Level Up Your Interview Skills</a>
+            <p>Receive personalized evaluation from experienced interview coaches. Get scored on clarity, confidence,
+                tone, and impact — along with actionable insights to sharpen your responses and deliver your best
+                performance.</p>
+            <a href="#" class="feedback-btn">Unlock AI Feedback</a>
         </div>
     </section>
+
+    <!-- Faq section starts -->
+    <section id="faq" class="faq section light-background">
+        <div class="container-fluid">
+            <div class="row gy-4">
+                <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+                    <div class="content" data-aos="fade-up" data-aos-delay="100">
+                        <div class="faq">
+                            <h2 style="color: #2c2a63; font-size: 28px;">
+                                <i class="fa-solid fa-quote-left me-2"></i>
+                                <span>Frequently Asked </span><strong>Questions</strong>
+                                <i class="fa-solid fa-quote-right ms-2"></i>
+                            </h2>
+                            <p>
+                                Still have questions? We’ve got answers. Explore our most common queries to see how
+                                Interview Preparation can help you feel confident, prepared, and ready to succeed in
+                                every interview.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
+                        <div class="faq-item faq-active">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>How are the mock interviews conducted?</h3>
+                            <div class="faq-content">
+                                <p>We conduct them virtually or in-person, depending on your preference, simulating real
+                                    interview settings.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                        <div class="faq-item">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>Will I get feedback after each session?</h3>
+                            <div class="faq-content">
+                                <p> Yes, you’ll receive personalized feedback highlighting your strengths and areas to
+                                    improve.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                        <div class="faq-item">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>
+                                Do you cover technical as well as HR questions?
+                            </h3>
+                            <div class="faq-content">
+                                <p> Absolutely. We customize the session to focus on technical, HR, or behavioral
+                                    interviews based on your career goals.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                        <div class="faq-item">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>How many sessions do I need before an actual interview?</h3>
+                            <div class="faq-content">
+                                <p> Most users benefit from 2–3 sessions, but we adjust depending on your confidence
+                                    level and job type.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                        <div class="faq-item">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>Can I record my mock interview?</h3>
+                            <div class="faq-content">
+                                <p> Yes, you can request a recording to review your performance later.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2">
+                    <div style=" background: rgba(237, 201, 175, 0.55);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); padding: 15px; border-radius: 10px;object-fit:contain;">
+                        <img src="assets/img/testimonials/faq-img.png" class="img-fluid" alt="" data-aos="zoom-in"
+                            data-aos-delay="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Faq section Ends -->
+
+
+
     <!-- Footer section starts -->
     <footer class="footer">
         <div class="footer-container">

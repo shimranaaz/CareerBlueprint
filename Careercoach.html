@@ -230,6 +230,7 @@
         .heading {
             text-align: center;
             margin-top: 40px;
+            padding: 2px;
         }
 
         .heading h2 {
@@ -319,7 +320,6 @@
 
         .feedback-text h2 span {
             color: #333;
-            /* red highlight */
         }
 
         .feedback-text p {
@@ -450,19 +450,16 @@
 
         @media (max-width: 768px) {
             .container3 {
-                /* or the first section class you used */
                 margin-top: 60px;
-                /* adjust the value as per your navbar height */
             }
         }
-          h1 span.rotate {
+
+        h1 span.rotate {
             display: inline-block;
             overflow: hidden;
             vertical-align: top;
             height: 1.3em;
-            /* controls box height */
             line-height: 1.3em;
-            /* centers words inside */
         }
 
 
@@ -505,6 +502,12 @@
                 transform: translateY(0%);
             }
         }
+
+        .faq {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+}
     </style>
 
 </head>
@@ -576,11 +579,6 @@
                 <p>10k+ Active Learners</p>
             </div>
         </div>
-        <!-- Right -->
-        <!-- <div class="right">
-      <div class="bg-effect"></div>
-      <img src="https://img.freepik.com/free-photo/group-happy-students_23-2147669475.jpg" alt="Students">
-    </div> -->
         <div class="right">
             <div class="bg-effect"></div>
             <video autoplay muted loop playsinline>
@@ -595,7 +593,9 @@
     <!-- Section 1: With Heading & Subheading -->
     <div class="heading">
         <h2>Real Coaching. Real Practice. Real Results</h2>
-        <p>Work with a career coach who doesn’t just advise — but practices with you through real-world interview drills, career mapping, and hands-on skill building</p>
+        <p>Go beyond generic advice—work with a coach who helps you practice, improve, and succeed. Through career
+            mapping, real interview drills, and hands-on guidance, we prepare you not just to dream big, but to achieve
+            it</p>
     </div>
 
     <section class="section">
@@ -608,12 +608,12 @@
         <div class="text">
             <h3>Clarity Before Action</h3>
             <ul class="list">
-                <li>1:1 sessions to identify strengths, weaknesses & hidden career paths</li>
-                <li>Build a personalized roadmap with milestones (internship → job → growth)</li>
-                <li>Match career goals to industry demand using real job postings</li>
-                <li>Set actionable weekly tasks to keep progress measurable</li>
+                <li>Discover your strengths, weaknesses, and hidden opportunities</li>
+                <li>Build a step-by-step roadmap—from internships to career growth</li>
+                <li>Align your goals with real industry demands and job openings</li>
+                <li>Set weekly action plans so your progress is measurable and consistent</li>
             </ul>
-            <a href="#" class="btn3">Schedule Your Session Now</a>
+            <a href="#" class="btn3">Find My Career Path</a>
         </div>
     </section>
 
@@ -625,12 +625,12 @@
         <div class="text">
             <h3>Learn by Doing, Not Just Listening</h3>
             <ul class="list">
-                <li>Live mock interviews across HR, Technical & Behavioral rounds</li>
-                <li>Instant feedback on answers, tone, confidence & storytelling</li>
+                <li>Mock interviews across HR, Technical, and Behavioral rounds</li>
+                <li>Immediate feedback on answers, confidence, and communication</li>
                 <li>Role-play sessions for group discussions & panel interviews</li>
-                <li>Practice until responses feel natural and performance-ready</li>
+                <li>Practice until you feel natural, confident, and performance-ready</li>
             </ul>
-            <a href="#" class="btn3">Schedule Your Session Now</a>
+            <a href="#" class="btn3">Practice With My Coach</a>
         </div>
 
         <!-- Right side Image -->
@@ -650,53 +650,102 @@
         <div class="text">
             <h3>Train for the Real World, Not Just Theory</h3>
             <ul class="list">
-                <li>Resume & LinkedIn makeover with live editing sessions</li>
-                <li>Presentation & communication practice in real-time</li>
-                <li>Whiteboard & problem-solving practice for technical jobs</li>
-                <li>Stress-management & confidence drills before the big day</li>
+                <li>Resume and LinkedIn makeover sessions tailored to your profile</li>
+                <li>Real-time communication and presentation practice</li>
+                <li>Whiteboard and problem-solving drills for technical roles</li>
+                <li>Stress-management techniques to boost confidence before the big day</li>
             </ul>
-            <a href="#" class="btn3">Schedule Your Session Now</a>
-        </div>
-    </section>
-
-    <!-- Section 1 -->
-    <section class="feedback-section">
-        <!-- Left Side Text -->
-        <div class="feedback-text">
-            <h2>Analyze your <span>performance</span></h2>
-            <p>Review your recorded mock interview and gain instant insights.
-                Identify areas for improvement and refine your responses before the real interview.</p>
-            <a href="#" class="feedback-btn">Try Our Tool</a>
-        </div>
-
-        <!-- Right Side Image -->
-        <div class="feedback-image">
-            <img src="assets/img/images/Analyze.png"
-                alt="Mock Interview Feedback">
-        </div>
-    </section>
-
-    <!-- Section 2 (Alternate) -->
-    <section class="feedback-section feedback-alt">
-        <!-- Left Side Image -->
-        <div class="feedback-image">
-            <img src="https://img.freepik.com/free-photo/group-happy-students_23-2147669475.jpg"
-                alt="AI Interview Insights">
-        </div>
-
-        <!-- Right Side Text -->
-        <div class="feedback-text">
-            <h2>Get <span>AI-powered</span> interview feedback</h2>
-            <p>Receive expert-level evaluation with AI-powered interview insights.
-                Get scored on tone, confidence, filler words, and impactful language, helping you polish your responses
-                to perfection.</p>
-            <a href="#" class="feedback-btn">Level Up Your Interview Skills</a>
+            <a href="#" class="btn3">Get Job-Ready Skills</a>
         </div>
     </section>
 
 
+    <!-- Faq section starts -->
+    <section id="faq" class="faq section light-background">
+        <div class="container-fluid">
+            <div class="row gy-4">
+                <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+                    <div class="content" data-aos="fade-up" data-aos-delay="100">
+                        <div class="faq">
+                            <h2 style="color: #2c2a63; font-size: 28px;">
+                                <i class="fa-solid fa-quote-left me-2"></i>
+                                <span>Frequently Asked </span><strong>Questions</strong>
+                                <i class="fa-solid fa-quote-right ms-2"></i>
+                            </h2>
+                            <p>
+                                Not sure if career coaching is right for you? Check out our most common questions to see
+                                how one-on-one guidance can help you gain clarity, build confidence, and take the next
+                                step toward your goals.
 
-
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
+                        <div class="faq-item faq-active">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>Who is career coaching for?</h3>
+                            <div class="faq-content">
+                                <p> Anyone at any career stage—students, graduates, working professionals, or career
+                                    changers.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                        <div class="faq-item">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>
+                                What topics are usually covered in coaching?
+                            </h3>
+                            <div class="faq-content">
+                                <p> Goal setting, skill development, job search strategies, career transitions, and
+                                    professional growth planning.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                        <div class="faq-item">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>
+                                How long is each coaching session?
+                            </h3>
+                            <div class="faq-content">
+                                <p>Typically 45–60 minutes, depending on your needs.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                        <div class="faq-item">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>Can coaching help if I’m unsure about my career path?</h3>
+                            <div class="faq-content">
+                                <p>Yes, coaches specialize in helping clients discover their strengths and career
+                                    options.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                        <div class="faq-item">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>Is career coaching a one-time session or ongoing?</h3>
+                            <div class="faq-content">
+                                <p>Both options are available—you can book single sessions or a series for continuous
+                                    support.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2">
+                    <div style=" background: rgba(237, 201, 175, 0.55);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); padding: 15px; border-radius: 10px;object-fit:contain;">
+                        <img src="assets/img/testimonials/faq-img.png" class="img-fluid" alt="" data-aos="zoom-in"
+                            data-aos-delay="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Faq section Ends -->
 
     <!-- Footer section starts -->
     <footer class="footer">

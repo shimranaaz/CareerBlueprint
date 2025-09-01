@@ -230,6 +230,7 @@
         .heading {
             text-align: center;
             margin-top: 40px;
+            padding: 2px;
         }
 
         .heading h2 {
@@ -254,11 +255,10 @@
             font-weight: 700;
         }
 
-      .list {
-    margin-top: 20px;
-    padding: 0;
-    /* margin: 0 0 20px 0; */
-}
+        .list {
+            margin-top: 20px;
+            padding: 0;
+        }
 
         .list li {
             margin-bottom: 12px;
@@ -319,7 +319,6 @@
 
         .feedback-text h2 span {
             color: #333;
-            /* red highlight */
         }
 
         .feedback-text p {
@@ -450,19 +449,16 @@
 
         @media (max-width: 768px) {
             .container3 {
-                /* or the first section class you used */
                 margin-top: 60px;
-                /* adjust the value as per your navbar height */
             }
         }
-          h1 span.rotate {
+
+        h1 span.rotate {
             display: inline-block;
             overflow: hidden;
             vertical-align: top;
             height: 1.3em;
-            /* controls box height */
             line-height: 1.3em;
-            /* centers words inside */
         }
 
 
@@ -505,9 +501,16 @@
                 transform: translateY(0%);
             }
         }
-          .text strong{
-           font-size: 19px;
+
+        .text strong {
+            font-size: 19px;
         }
+
+    .faq {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+}
     </style>
 
 </head>
@@ -579,26 +582,20 @@
                 <p>10k+ Active Learners</p>
             </div>
         </div>
-        <!-- Right -->
-        <!-- <div class="right">
-      <div class="bg-effect"></div>
-      <img src="https://img.freepik.com/free-photo/group-happy-students_23-2147669475.jpg" alt="Students">
-    </div> -->
         <div class="right">
             <div class="bg-effect"></div>
             <video autoplay muted loop playsinline>
-                <source src="assets/img/images/People Business Learning Online School Video.mp4" type="video/mp4">
+                <source src="assets/img/images/networking (1).mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-
     </div>
-
-
     <!-- Section 1: With Heading & Subheading -->
     <div class="heading">
         <h2>Be Seen. Be Connected. Be Hired.</h2>
-        <p>We don’t just teach networking — we build it with you. From LinkedIn to Naukri and leading job platforms, we optimize your profile and show you how to connect with the right people who can open career doors</p>
+        <p>The right connections can open doors no job board ever will. We don’t just tell you to network—we guide you
+            step by step, helping you optimize your profiles, connect with the right people, and turn conversations into
+            career opportunities</p>
     </div>
 
     <section class="section">
@@ -612,12 +609,12 @@
             <h3>Profile Setup & Optimization</h3>
             <strong>Your Digital Resume, Built to Impress</strong>
             <ul class="list">
-                <li>Create and optimize LinkedIn, Naukri, and other platform profiles</li>
-                <li>Craft a compelling professional summary that attracts recruiters</li>
-                <li>Highlight achievements and skills with keyword-rich visibility</li>
-                <li>Ensure ATS-friendly formatting to boost discoverability</li>
+                <li>Create and polish LinkedIn, Naukri, and other platform profiles</li>
+                <li>Craft a compelling summary that instantly attracts recruiters</li>
+                <li>Highlight your skills and achievements with the right keywords</li>
+                <li>Format your profile for ATS-friendly visibility and higher reach</li>
             </ul>
-            <a href="#" class="btn3">Schedule Your Session Now</a>
+            <a href="#" class="btn3">Optimize My Profile</a>
         </div>
     </section>
 
@@ -630,12 +627,12 @@
             <h3>Strategic Networking Guidance</h3>
             <strong>Connections That Actually Count</strong>
             <ul class="list">
-                <li>Learn how to connect with HRs, recruiters, and industry leaders</li>
-                <li>Message frameworks that get responses (without sounding pushy)</li>
-                <li>Engagement tips — posting, commenting, and building presence</li>
-                <li>Proven outreach methods to grow your network strategically</li>
+                <li>Learn how to reach out to HRs, recruiters, and industry leaders</li>
+                <li>Use proven messaging templates that get replies (without being pushy)</li>
+                <li>Master engagement—posting, commenting, and building presence</li>
+                <li>Follow outreach strategies that grow your network with purpose</li>
             </ul>
-            <a href="#" class="btn3">Schedule Your Session Now</a>
+            <a href="#" class="btn3">Guide My Networking</a>
         </div>
 
         <!-- Right side Image -->
@@ -657,51 +654,100 @@
             <strong>Stay on the Radar, Always</strong>
             <ul class="list">
                 <li>Build a consistent professional presence across platforms</li>
-                <li>Tips to leverage groups, events, and communities</li>
-                <li>Strategies for turning connections into referrals & opportunities</li>
-                <li>Continuous guidance to keep your profile fresh and relevant</li>
+                <li>Leverage groups, events, and industry communities to get noticed</li>
+                <li>Turn connections into referrals and real job opportunities</li>
+                <li>Get continuous tips to keep your profile fresh and relevant</li>
             </ul>
-            <a href="#" class="btn3">Schedule Your Session Now</a>
+            <a href="#" class="btn3">Grow My Career</a>
         </div>
     </section>
 
-    <!-- Section 1 -->
-    <section class="feedback-section">
-        <!-- Left Side Text -->
-        <div class="feedback-text">
-            <h2>Analyze your <span>performance</span></h2>
-            <p>Review your recorded mock interview and gain instant insights.
-                Identify areas for improvement and refine your responses before the real interview.</p>
-            <a href="#" class="feedback-btn">Try Our Tool</a>
-        </div>
+    <!-- Faq section starts -->
+    <section id="faq" class="faq section light-background">
+        <div class="container-fluid">
+            <div class="row gy-4">
+                <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+                    <div class="content" data-aos="fade-up" data-aos-delay="100">
+                        <div class="faq">
+                            <h2 style="color: #2c2a63; font-size: 28px;">
+                                <i class="fa-solid fa-quote-left me-2"></i>
+                                <span>Frequently Asked </span><strong>Questions</strong>
+                                <i class="fa-solid fa-quote-right ms-2"></i>
+                            </h2>
+                            <p>
+                                Not sure how networking can open doors for you? Explore our FAQs to see how profile
+                                optimization, smart strategies, and long-term visibility can help you build meaningful
+                                connections and advance your career
 
-        <!-- Right Side Image -->
-        <div class="feedback-image">
-            <img src="assets/img/images/Analyze.png"
-                alt="Mock Interview Feedback">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
+                        <div class="faq-item faq-active">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>Why is networking important for my career?</h3>
+                            <div class="faq-content">
+                                <p> Networking opens doors to hidden job opportunities, mentorship, and industry
+                                    insights.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                        <div class="faq-item">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>
+                                Do you teach how to use LinkedIn effectively?
+                            </h3>
+                            <div class="faq-content">
+                                <p> Yes, we guide you on optimizing your profile, connecting with professionals, and
+                                    engaging meaningfully.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                        <div class="faq-item">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>
+                                What if I’m shy or introverted?
+                            </h3>
+                            <div class="faq-content">
+                                <p>We provide strategies for building confidence and networking effectively even as an
+                                    introvert.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                        <div class="faq-item">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>Will you help me practice networking conversations?</h3>
+                            <div class="faq-content">
+                                <p> Definitely. We role-play real networking scenarios so you feel prepared.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                        <div class="faq-item">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>Can networking really help me land a job?</h3>
+                            <div class="faq-content">
+                                <p> Yes—studies show a large percentage of jobs are filled through networking rather
+                                    than job boards.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2">
+                    <div style=" background: rgba(237, 201, 175, 0.55);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); padding: 15px; border-radius: 10px;object-fit:contain;">
+                        <img src="assets/img/testimonials/faq-img.png" class="img-fluid" alt="" data-aos="zoom-in"
+                            data-aos-delay="100">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
-    <!-- Section 2 (Alternate) -->
-    <section class="feedback-section feedback-alt">
-        <!-- Left Side Image -->
-        <div class="feedback-image">
-            <img src="https://img.freepik.com/free-photo/group-happy-students_23-2147669475.jpg"
-                alt="AI Interview Insights">
-        </div>
-
-        <!-- Right Side Text -->
-        <div class="feedback-text">
-            <h2>Get <span>AI-powered</span> interview feedback</h2>
-            <p>Receive expert-level evaluation with AI-powered interview insights.
-                Get scored on tone, confidence, filler words, and impactful language, helping you polish your responses
-                to perfection.</p>
-            <a href="#" class="feedback-btn">Level Up Your Interview Skills</a>
-        </div>
-    </section>
-
-
-
+    <!-- Faq section Ends -->
 
 
     <!-- Footer section starts -->

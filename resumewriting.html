@@ -226,10 +226,10 @@
             padding: 60px 80px;
             gap: 70px;
         }
-
-        .heading {
+  .heading {
             text-align: center;
             margin-top: 40px;
+            padding: 2px;
         }
 
         .heading h2 {
@@ -254,11 +254,10 @@
             font-weight: 700;
         }
 
-      .list {
-    margin-top: 20px;
-    padding: 0;
-    /* margin: 0 0 20px 0; */
-}
+        .list {
+            margin-top: 20px;
+            padding: 0;
+        }
 
         .list li {
             margin-bottom: 12px;
@@ -450,19 +449,16 @@
 
         @media (max-width: 768px) {
             .container3 {
-                /* or the first section class you used */
                 margin-top: 60px;
-                /* adjust the value as per your navbar height */
             }
         }
-          h1 span.rotate {
+
+        h1 span.rotate {
             display: inline-block;
             overflow: hidden;
             vertical-align: top;
             height: 1.3em;
-            /* controls box height */
             line-height: 1.3em;
-            /* centers words inside */
         }
 
 
@@ -505,9 +501,16 @@
                 transform: translateY(0%);
             }
         }
-        .text strong{
-           font-size: 19px;
+
+        .text strong {
+            font-size: 19px;
         }
+
+        .faq {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+}
     </style>
 
 </head>
@@ -545,8 +548,6 @@
     </header>
     <!-- Navbar-Ends -->
 
-
-
     <div class="container3">
         <!-- Left -->
         <div class="left">
@@ -579,26 +580,20 @@
                 <p>10k+ Active Learners</p>
             </div>
         </div>
-        <!-- Right -->
-        <!-- <div class="right">
-      <div class="bg-effect"></div>
-      <img src="https://img.freepik.com/free-photo/group-happy-students_23-2147669475.jpg" alt="Students">
-    </div> -->
         <div class="right">
             <div class="bg-effect"></div>
             <video autoplay muted loop playsinline>
-                <source src="assets/img/images/People Business Learning Online School Video.mp4" type="video/mp4">
+                <source src="assets/img/images/resume.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-
     </div>
-
-
     <!-- Section 1: With Heading & Subheading -->
     <div class="heading">
         <h2>Turn Your Resume Into Your Strongest First Impression</h2>
-        <p>Your resume isn’t just a document — it’s your career story. We craft resumes that highlight your achievements, showcase your strengths, and position you as the top choice for recruiters</p>
+        <p>Your resume is more than just a list of jobs—it’s your personal brand. We help transform it into a powerful
+            story that highlights your achievements, captures your strengths, and positions you as the candidate every
+            recruiter wants to meet.</p>
     </div>
 
     <section class="section">
@@ -612,12 +607,14 @@
             <h3>Professional Resume Review</h3>
             <strong>See What Recruiters See — Before They Do.</strong>
             <ul class="list">
-                <li>In-depth review by career experts who know what hiring managers want</li>
-                <li>Identify blind spots, weak points, and areas for improvement</li>
-                <li>Clear feedback to ensure your resume passes initial screenings</li>
-                <li>Optimization for clarity, flow, and professional impact</li>
+                <li>Get an expert review from professionals who understand hiring trends</li>
+                <li>Spot blind spots, weak areas, and missed opportunities in your resume</li>
+                <li>Receive clear, actionable feedback to pass the first round of screenings</li>
+                <li>
+                    Optimize clarity, structure, and tone for maximum impact
+                </li>
             </ul>
-            <a href="#" class="btn3">Schedule Your Session Now</a>
+            <a href="#" class="btn3">Review My Resume</a>
         </div>
     </section>
 
@@ -630,12 +627,12 @@
             <h3>Tailored Resume Building</h3>
             <strong>A Resume Built Around Your Career Goals</strong>
             <ul class="list">
-                <li>Customized to your industry, role, and aspirations</li>
-                <li>Impact-driven language that highlights results, not just tasks</li>
-                <li>ATS-friendly structure to ensure visibility in job portals</li>
-                <li>Clean, modern formatting designed to stand out at first glance</li>
+                <li>Customized for your industry, role, and future aspirations</li>
+                <li>Written with impact-focused language that highlights results—not just duties</li>
+                <li>Optimized for ATS (Applicant Tracking Systems) to ensure recruiters actually see it</li>
+                <li>Clean, modern formatting that grabs attention at first glance</li>
             </ul>
-            <a href="#" class="btn3">Schedule Your Session Now</a>
+            <a href="#" class="btn3">Build My Resume</a>
         </div>
 
         <!-- Right side Image -->
@@ -656,53 +653,100 @@
             <h3>Beyond the Resume</h3>
             <strong>Build Your Personal Brand Across Platforms</strong>
             <ul class="list">
-                <li>LinkedIn profile alignment with your new resume</li>
-                <li>Personalized cover letter crafted for targeted applications</li>
-                <li>Guidance on adapting your resume for multiple roles</li>
-                <li>Support in showcasing skills that make you interview-ready</li>
+                <li>Align your LinkedIn profile with your upgraded resume</li>
+                <li>Get a personalized cover letter tailored for specific applications</li>
+                <li>Learn how to adapt your resume for different job roles</li>
+                <li>
+                    Showcase your skills confidently to make you interview-ready
+                </li>
             </ul>
-            <a href="#" class="btn3">Schedule Your Session Now</a>
+            <a href="#" class="btn3">Boost My Profile</a>
         </div>
     </section>
 
-    <!-- Section 1 -->
-    <section class="feedback-section">
-        <!-- Left Side Text -->
-        <div class="feedback-text">
-            <h2>Analyze your <span>performance</span></h2>
-            <p>Review your recorded mock interview and gain instant insights.
-                Identify areas for improvement and refine your responses before the real interview.</p>
-            <a href="#" class="feedback-btn">Try Our Tool</a>
-        </div>
+    <!-- Faq section starts -->
+    <section id="faq" class="faq section light-background">
+        <div class="container-fluid">
+            <div class="row gy-4">
+                <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+                    <div class="content" data-aos="fade-up" data-aos-delay="100">
+                        <div class="faq">
+                            <h2 style="color: #2c2a63; font-size: 28px;">
+                                <i class="fa-solid fa-quote-left me-2"></i>
+                                <span>Frequently Asked </span><strong>Questions</strong>
+                                <i class="fa-solid fa-quote-right ms-2"></i>
+                            </h2>
+                            <p>
+                                Still wondering how a resume makeover can help? Explore our FAQs to learn how expert
+                                feedback, personalized building, and profile alignment can give you the edge in today’s
+                                job market.
 
-        <!-- Right Side Image -->
-        <div class="feedback-image">
-            <img src="assets/img/images/Analyze.png"
-                alt="Mock Interview Feedback">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
+                        <div class="faq-item faq-active">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>What if I don’t have a resume yet?</h3>
+                            <div class="faq-content">
+                                <p> We can help you build one from scratch, tailored to your career goals.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                        <div class="faq-item">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>
+                                Do you review resumes for specific industries?
+                            </h3>
+                            <div class="faq-content">
+                                <p>Yes, we customize resumes for IT, finance, healthcare, creative fields, and more.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                        <div class="faq-item">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>
+                                Will my resume be ATS-friendly?
+                            </h3>
+                            <div class="faq-content">
+                                <p> Absolutely, we format and optimize your resume so it passes Applicant Tracking
+                                    Systems.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                        <div class="faq-item">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>How long does it take to get a reviewed resume back?</h3>
+                            <div class="faq-content">
+                                <p> Typically 2–3 business days, depending on complexity.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                        <div class="faq-item">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>Do you also provide cover letter writing?</h3>
+                            <div class="faq-content">
+                                <p> Yes, we can draft a professional cover letter to complement your resume.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2">
+                    <div style=" background: rgba(237, 201, 175, 0.55);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); padding: 15px; border-radius: 10px;object-fit:contain;">
+                        <img src="assets/img/testimonials/faq-img.png" class="img-fluid" alt="" data-aos="zoom-in"
+                            data-aos-delay="100">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
-    <!-- Section 2 (Alternate) -->
-    <section class="feedback-section feedback-alt">
-        <!-- Left Side Image -->
-        <div class="feedback-image">
-            <img src="https://img.freepik.com/free-photo/group-happy-students_23-2147669475.jpg"
-                alt="AI Interview Insights">
-        </div>
-
-        <!-- Right Side Text -->
-        <div class="feedback-text">
-            <h2>Get <span>AI-powered</span> interview feedback</h2>
-            <p>Receive expert-level evaluation with AI-powered interview insights.
-                Get scored on tone, confidence, filler words, and impactful language, helping you polish your responses
-                to perfection.</p>
-            <a href="#" class="feedback-btn">Level Up Your Interview Skills</a>
-        </div>
-    </section>
-
-
-
-
+    <!-- Faq section Ends -->
 
     <!-- Footer section starts -->
     <footer class="footer">
