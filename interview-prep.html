@@ -69,6 +69,22 @@
         h2 {
             font-size: 1.5rem;
             margin-top: 30px;
+
+        }
+
+        .faq .content p {
+            color: #333;
+            font-weight: 600;
+        }
+
+        @media (min-width: 768px) {
+            .faq h2 {
+                margin-left: 29px;
+            }
+
+            .faq .content p {
+                margin-left: 23px;
+            }
         }
 
         p,
@@ -124,13 +140,12 @@
 
         .container3 {
             display: flex;
-            max-width: 1080px;
+            max-width: 1159px;
             padding: 100px 20px 30px;
             margin: auto;
             align-items: center;
-            justify-content: space-between;
-            margin-top: 20px;
-            margin-bottom: 30px;
+            justify-content: center;
+            gap: 20px;
         }
 
         .left {
@@ -138,7 +153,7 @@
         }
 
         .left h1 {
-            font-size: 2.5rem;
+            font-size: 38px;
             line-height: 1.2;
         }
 
@@ -193,7 +208,7 @@
 
         .right {
             position: relative;
-            width: 45%;
+            width: 50%;
         }
 
         .right video {
@@ -227,11 +242,10 @@
             gap: 70px;
         }
 
-       .heading {
-    text-align: center;
-    margin-top: 40px;
-    padding: 2px;
-}
+        .heading {
+            text-align: center;
+            padding: 2px;
+        }
 
         .heading h2 {
             font-size: 2rem;
@@ -242,6 +256,10 @@
         .heading p {
             font-size: 1.1rem;
             color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 1.6;
         }
 
         .text {
@@ -320,7 +338,6 @@
 
         .feedback-text h2 span {
             color: #333;
-            /* red highlight */
         }
 
         .feedback-text p {
@@ -355,13 +372,17 @@
             background: #fff;
         }
 
+        .faq-container {
+            padding: 20px;
+        }
+
         @media (max-width: 991px) {
 
             .container3,
             .section,
             .feedback-section {
                 flex-direction: column;
-                padding: 30px 30px;
+                padding: 0px 30px;
                 text-align: center;
             }
 
@@ -401,6 +422,11 @@
             }
 
             .heading p {
+                font-size: 15px;
+                padding: 14px;
+            }
+
+            .heading strong {
                 font-size: 15px;
             }
 
@@ -447,12 +473,16 @@
                 font-size: 12px;
                 padding: 8px 16px;
             }
-        
+
+            .faq-container {
+                padding: 0px;
+            }
         }
 
         @media (max-width: 768px) {
             .container3 {
-                margin-top: 60px;
+                margin-top: 100px;
+                gap: 0px;
             }
         }
 
@@ -464,11 +494,10 @@
             line-height: 1.3em;
         }
 
-
         h1 span.rotate span {
             display: block;
             color: #2c2a63;
-            animation: rotateWords 6s infinite;
+            animation: rotateWords 8s infinite;
         }
 
         @keyframes rotateWords {
@@ -497,7 +526,11 @@
             }
 
             75% {
-                transform: translateY(0%);
+                transform: translateY(-300%);
+            }
+
+            95% {
+                transform: translateY(-300%);
             }
 
             100% {
@@ -505,11 +538,376 @@
             }
         }
 
-   .faq {
-    display: flex;
-    flex-direction: column;
-    padding: 2px;
-}
+
+        .faq {
+            display: flex;
+            flex-direction: column;
+            padding: 2px;
+        }
+
+        .faq-image-container {
+            background: rgba(237, 201, 175, 0.55);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 15px;
+            border-radius: 10px;
+            object-fit: contain;
+            height: 108vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .faq-image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 991px) {
+            .faq-image-container {
+                height: auto;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .faq-image-container {
+                height: auto;
+                padding: 8px;
+                border-radius: 8px;
+            }
+
+            .faq-image-container img {
+                width: 100%;
+            }
+        }
+
+        .roadmap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 28px;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .roadmap-left {
+            flex: 1 1 45%;
+            min-width: 300px;
+            padding-right: 20px;
+        }
+
+        .roadmap-left h3 {
+            font-size: 16px;
+            color: #eebf9f;
+            margin-bottom: 10px;
+        }
+
+        .roadmap-left h2 {
+            font-size: 27px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .roadmap-left p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .roadmap-left .btn {
+            background: #eebf9f;
+            color: #2c2a63;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .roadmap-right {
+            flex: 1 1 50%;
+            min-width: 300px;
+            position: relative;
+        }
+
+        .roadmap-svg {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            height: 100%;
+            z-index: 1;
+        }
+
+        .roadmap-svg path {
+            stroke: #2c2a63;
+        }
+
+        .roadmap-step {
+            display: flex;
+            justify-content: flex-end;
+            gap: -14px;
+            align-items: flex-start;
+            margin: 17px -31px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .roadmap-step:nth-child(even) {
+            justify-content: flex-start;
+        }
+
+        .step-content {
+            background: #2c2a63;
+            color: #EDC9AF;
+            padding: 20px 24px;
+            border-radius: 79px;
+            max-width: 247px;
+            display: flex;
+            margin-left: 99px;
+            flex-direction: column;
+            font-size: 14px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-content1 {
+            background: #2c2a63;
+            color: #EDC9AF;
+            padding: 20px 24px;
+            border-radius: 79px;
+            max-width: 247px;
+            display: flex;
+            margin-left: 99px;
+            flex-direction: column;
+            font-size: 14px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .roadmap-step:nth-child(even) .step-content {
+            background: #EDC9AF;
+            color: #2c2a63;
+        }
+
+        .step-content span:first-child {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .step-description {
+            font-size: 12px;
+            margin-top: 5px;
+            opacity: 0.85;
+            font-weight: 500;
+        }
+
+        .step-number {
+            font-family: 'Raleway', sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+            color: #2c2a63;
+            display: flex;
+            flex-direction: column;
+            margin-left: 67px;
+            align-items: center;
+        }
+
+        .step-number1 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+            position: relative;
+            color: #2c2a63;
+            top: -14px;
+            right: 55%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 15px;
+        }
+
+        .step-number1 span {
+            font-size: 12px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        .step-number span {
+            font-size: 12px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        @media (max-width: 768px) {
+            .roadmap {
+                flex-direction: column;
+                padding: 30px 20px;
+            }
+
+            .roadmap-left,
+            .roadmap-right {
+                flex: 1 1 100%;
+                padding: 0;
+            }
+
+            .roadmap-step {
+                justify-content: flex-start !important;
+                margin: 40px 0;
+            }
+
+            .step-number {
+                display: none;
+            }
+
+            .roadmap-svg {
+                left: 20px;
+                transform: none;
+                width: 4px;
+                height: 93%;
+            }
+
+            .step-content {
+                max-width: 90%;
+                margin-left: 40px;
+                border-radius: 15px;
+                padding: 15px 20px;
+            }
+
+            .step-content span:first-child {
+                font-size: 16px;
+            }
+
+            .step-description {
+                font-weight: 500;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .roadmap {
+                flex-direction: column;
+                padding: 30px 20px;
+            }
+
+            .roadmap-left {
+                flex: 1 1 100%;
+                padding-bottom: 40px;
+            }
+
+            .roadmap-right {
+                flex: 1 1 100%;
+                position: relative;
+                padding-top: 20px;
+                min-height: 600px;
+            }
+
+            .roadmap-step {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                position: relative;
+                margin: 30px 0;
+            }
+
+            .roadmap-step:nth-child(odd) {
+                justify-content: flex-end;
+                padding-right: 20px;
+            }
+
+            .roadmap-step:nth-child(even) {
+                justify-content: flex-start;
+                padding-left: 20px;
+            }
+
+            .step-content {
+                max-width: 90%;
+                border-radius: 43px;
+                padding: 15px 20px;
+                font-size: 13px;
+            }
+
+            .step-number {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 10px;
+                font-size: 36px;
+            }
+
+            .roadmap-svg {
+                left: 50%;
+                width: 103px;
+                transform: translateX(-50%);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .roadmap {
+                flex-direction: column;
+                padding: 30px 20px;
+            }
+
+            .roadmap-step {
+                display: flex;
+                align-items: center;
+                margin: 50px 0;
+                position: relative;
+            }
+
+            .step-number {
+                position: absolute;
+                left: 13%;
+                transform: translateX(-50%);
+                font-size: 28px;
+                font-weight: bold;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .step-number1 {
+                position: absolute;
+                left: 83%;
+                transform: translateX(-50%);
+                font-size: 28px;
+                font-weight: bold;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .roadmap-step:nth-child(odd) .step-content {
+                margin-right: auto;
+                margin-left: 0;
+                text-align: left;
+            }
+
+            .roadmap-step:nth-child(even) .step-content {
+                margin-left: auto;
+                margin-right: 0;
+                text-align: left;
+            }
+
+            .step-content {
+                max-width: 75%;
+                border-radius: 40px;
+                padding: 15px 20px;
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .step-content,
+            .step-content1 {
+                margin-left: 20px;
+                max-width: 80%;
+            }
+        }
     </style>
 
 </head>
@@ -548,27 +946,27 @@
     <!-- Navbar-Ends -->
 
 
-
+    <!-- Home section starts -->
     <div class="container3">
-        <!-- Left -->
         <div class="left">
             <h1>
-                <span>Career Blueprint,</span>
+                <span>Practice Like It’s Real Perform Like a</span>
                 <span class="rotate">
-                    <span>Coding</span>
-                    <span>Designing</span>
-                    <span>Developer</span>
+                    <span>Confident</span>
+                    <span>Ready</span>
+                    <span>Sharp</span>
+                    <span>Unstoppable</span>
                 </span>
-                <span>Simplified!!!</span>
+                <br>
+                <span>Pro.</span>
             </h1>
-            <a href="#" class="btn1">Sign Up for Free</a>
 
             <div class="checks">
-                <span>Aptitude</span>
-                <span>Coding</span>
-                <span>Interview Prep</span>
-                <span>New Age Skills</span>
+                <span>Mock Interviews</span>
+                <span>Live Feedback</span>
+                <span>Real-Time Coaching</span>
             </div>
+            <p>Step into a professional setup that prepares you for the toughest interviews.</p>
             <div class="content">
                 <div class="stats">
                     <img src="https://randomuser.me/api/portraits/women/44.jpg" width="40">
@@ -580,6 +978,10 @@
                 </div>
                 <p>10k+ Active Learners</p>
             </div>
+            <a href="#" class="btn1"
+                onclick="openWhatsApp('Hi Career Blueprint, I’d like to know more about Interview Preparation. Can you guide me?')">
+                Book Your Free Call
+            </a>
         </div>
         <div class="right">
             <div class="bg-effect"></div>
@@ -589,7 +991,9 @@
             </video>
         </div>
     </div>
-    <!-- Section 1: With Heading & Subheading -->
+    <!-- Home section Ends -->
+
+    <!-- Hero section starts -->
     <div class="heading">
         <h2>High-Level Unique Version</h2>
         <strong>Step Beyond Preparation — Into Performance.</strong>
@@ -597,14 +1001,10 @@
             real-world interview settings, helping you practice, gain confidence, and deliver answers that leave a
             lasting impression.</p>
     </div>
-
     <section class="section">
-        <!-- Left side Image -->
         <div class="image">
             <img src="assets/img/images/Code.png" alt="Interview Setup">
         </div>
-
-        <!-- Right side Content -->
         <div class="text">
             <h3>Code in Real-World Conditions</h3>
             <ul class="list">
@@ -613,15 +1013,14 @@
                 <li>Sharpen your logic with problems designed for real tests, not just practice sheets</li>
                 <li>Experience the pressure and pace of actual technical rounds</li>
             </ul>
-            <a href="#" class="btn3">Start Practicing Now</a>
+            <a href="#" class="btn3"
+                onclick="openWhatsApp('Hi Career Blueprint, I’d like to know more about Interview Preparation. Can you guide me?')">
+                Start Practicing Now
+            </a>
         </div>
     </section>
-
     <div class="divider"></div>
-
-    <!-- Section 2: Without Heading & Subheading -->
     <section class="section">
-        <!-- Left side Content -->
         <div class="text">
             <h3>Your Interview, As Real As It Gets</h3>
             <ul class="list">
@@ -629,23 +1028,19 @@
                 <li>Zero technical hassle—just focus on performing</li>
                 <li>Unique replay option so you can review your answers and improve instantly</li>
             </ul>
-            <a href="#" class="btn3">Book a Mock Interview</a>
+            <a href="#" class="btn3"
+                onclick="openWhatsApp('Hi Career Blueprint, I’d like to know more about Interview Preparation. Can you guide me?')">
+                Book a Mock Interview
+            </a>
         </div>
-
-        <!-- Right side Image -->
         <div class="image">
             <img src="assets/img/images/interviewtips.png" alt="Interview Setup">
         </div>
     </section>
-
-
     <section class="section">
-        <!-- Left side Image -->
         <div class="image">
             <img src="assets/img/images/Instantly.png" alt="Interview Setup">
         </div>
-
-        <!-- Right side Content -->
         <div class="text">
             <h3>Where Ideas Take Shape — Instantly</h3>
             <ul class="list">
@@ -654,127 +1049,195 @@
                 <li>Collaborate smoothly during logic or problem-solving discussions</li>
                 <li>Save and revisit your solutions to track growth over time</li>
             </ul>
-            <a href="#" class="btn3">Practice Instantly</a>
+            <a href="#" class="btn3"
+                onclick="openWhatsApp('Hi Career Blueprint, I’d like to know more about Interview Preparation. Can you guide me?')">
+                Practice Instantly
+            </a>
         </div>
     </section>
-
-    <!-- Section 1 -->
     <section class="feedback-section">
-        <!-- Left Side Text -->
         <div class="feedback-text">
             <h2>Analyze your <span>performance</span></h2>
             <p>Go through your mock interview results, understand your strengths, and identify areas to improve. Get
                 clear insights to boost your confidence for the real interview.</p>
-            <a href="#" class="feedback-btn">Get My Analysis</a>
+            <a href="#" class="feedback-btn"
+                onclick="openWhatsApp('Hi Career Blueprint, I’d like to know more about Interview Preparation. Can you guide me?')">
+                Get My Analysis
+            </a>
         </div>
-
-        <!-- Right Side Image -->
         <div class="feedback-image">
             <img src="assets/img/images/Analyze.png" alt="Mock Interview Feedback">
         </div>
     </section>
-
-    <!-- Section 2 (Alternate) -->
     <section class="feedback-section feedback-alt">
-        <!-- Left Side Image -->
         <div class="feedback-image">
-            <img src="assets/img/images/feedback.jpg" alt="AI Interview Insights">
+            <img src="assets/img/images/feedback.png" alt="AI Interview Insights">
         </div>
-
-        <!-- Right Side Text -->
         <div class="feedback-text">
             <h2>Get <span>Expert-Guided</span> interview feedback</h2>
             <p>Receive personalized evaluation from experienced interview coaches. Get scored on clarity, confidence,
                 tone, and impact — along with actionable insights to sharpen your responses and deliver your best
                 performance.</p>
-            <a href="#" class="feedback-btn">Unlock AI Feedback</a>
+            <a href="#" class="feedback-btn"
+                onclick="openWhatsApp('Hi Career Blueprint, I’d like to know more about Interview Preparation. Can you guide me?')">
+                Unlock Expert Feedback
+            </a>
         </div>
     </section>
+    <!-- Hero section Ends -->
 
-    <!-- Faq section starts -->
-    <section id="faq" class="faq section light-background">
-        <div class="container-fluid">
-            <div class="row gy-4">
-                <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-                    <div class="content" data-aos="fade-up" data-aos-delay="100">
-                        <div class="faq">
-                            <h2 style="color: #2c2a63; font-size: 28px;">
-                                <i class="fa-solid fa-quote-left me-2"></i>
-                                <span>Frequently Asked </span><strong>Questions</strong>
-                                <i class="fa-solid fa-quote-right ms-2"></i>
-                            </h2>
-                            <p>
-                                Still have questions? We’ve got answers. Explore our most common queries to see how
-                                Interview Preparation can help you feel confident, prepared, and ready to succeed in
-                                every interview.
+    <!-- Roadmap section starts -->
+    <section class="roadmap">
+        <div class="roadmap-left">
+            <h2 style="color: #2c2a63;">
+                <i class="fa-solid fa-quote-left me-2"></i>
+                Preparing You for Every Question
+                <i class="fa-solid fa-quote-right ms-2"></i>
+            </h2>
+            <p>We assess your career goals, conduct mock interviews, and share feedback so you build confidence. Our
+                process
+                ensures you’re ready to impress in real interviews.</p>
+            <a href="#" class="btn">Contact Us →</a>
+        </div>
 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
-                        <div class="faq-item faq-active">
-                            <i class="faq-icon bi bi-question-circle"></i>
-                            <h3>How are the mock interviews conducted?</h3>
-                            <div class="faq-content">
-                                <p>We conduct them virtually or in-person, depending on your preference, simulating real
-                                    interview settings.</p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div>
-                        <div class="faq-item">
-                            <i class="faq-icon bi bi-question-circle"></i>
-                            <h3>Will I get feedback after each session?</h3>
-                            <div class="faq-content">
-                                <p> Yes, you’ll receive personalized feedback highlighting your strengths and areas to
-                                    improve.
-                                </p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div>
-                        <div class="faq-item">
-                            <i class="faq-icon bi bi-question-circle"></i>
-                            <h3>
-                                Do you cover technical as well as HR questions?
-                            </h3>
-                            <div class="faq-content">
-                                <p> Absolutely. We customize the session to focus on technical, HR, or behavioral
-                                    interviews based on your career goals.
-                                </p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div>
-                        <div class="faq-item">
-                            <i class="faq-icon bi bi-question-circle"></i>
-                            <h3>How many sessions do I need before an actual interview?</h3>
-                            <div class="faq-content">
-                                <p> Most users benefit from 2–3 sessions, but we adjust depending on your confidence
-                                    level and job type.</p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div>
-                        <div class="faq-item">
-                            <i class="faq-icon bi bi-question-circle"></i>
-                            <h3>Can I record my mock interview?</h3>
-                            <div class="faq-content">
-                                <p> Yes, you can request a recording to review your performance later.
-                                </p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div>
-                    </div>
+        <div class="roadmap-right">
+            <svg class="roadmap-svg" width="100" height="800" viewBox="0 0 100 800" preserveAspectRatio="none">
+                <path d="M50 0 Q 100 100, 50 200 Q 0 300, 50 400 Q 100 500, 50 600 Q 0 700, 50 800" stroke="#ccc"
+                    stroke-dasharray="4,8" stroke-width="3" fill="none" />
+            </svg>
+
+            <div class="roadmap-step">
+                <div class="step-content">
+                    <span>Select Job Role & Share JD</span>
                 </div>
-                <div class="col-lg-5 order-1 order-lg-2">
-                    <div style=" background: rgba(237, 201, 175, 0.55);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px); padding: 15px; border-radius: 10px;object-fit:contain;">
-                        <img src="assets/img/testimonials/faq-img.png" class="img-fluid" alt="" data-aos="zoom-in"
-                            data-aos-delay="100">
+                <div class="step-number">
+                    <span>STEP</span>
+                    01
+                </div>
+            </div>
+
+            <div class="roadmap-step">
+                <div class="step-content1">
+                    <span>Schedule Mock Interview (with Expert)</span>
+                </div>
+                <div class="step-number1">
+                    <span>STEP</span>
+                    02
+                </div>
+            </div>
+
+            <div class="roadmap-step">
+                <div class="step-content">
+                    <span>Live Mock Interview Session</span>
+                </div>
+                <div class="step-number">
+                    <span>STEP</span>
+                    03
+                </div>
+            </div>
+
+            <div class="roadmap-step">
+                <div class="step-content1">
+                    <span>Feedback Report + Improvement Plan</span>
+                </div>
+                <div class="step-number1">
+                    <span>STEP</span>
+                    04
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Roadmap section Ends -->
+
+    <!-- Faq section Starts -->
+    <section id="faq" class="faq section light-background">
+        <div class="faq-container">
+            <div class="container-fluid">
+                <div class="row gy-4">
+                    <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+                        <div class="content" data-aos="fade-up" data-aos-delay="100">
+                            <div class="faq">
+                                <h2 style="color: #2c2a63; font-size: 28px;">
+                                    <i class="fa-solid fa-quote-left me-2"></i>
+                                    <span>Frequently Asked </span><strong>Questions</strong>
+                                    <i class="fa-solid fa-quote-right ms-2"></i>
+                                </h2>
+                                <p>
+                                    Still have questions? We’ve got answers. Explore our most common queries to see how
+                                    Interview Preparation can help you feel confident, prepared, and ready to succeed in
+                                    every interview.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
+                            <div class="faq-item faq-active">
+                                <i class="faq-icon bi bi-question-circle"></i>
+                                <h3>How are the mock interviews conducted?</h3>
+                                <div class="faq-content">
+                                    <p>We conduct them virtually or in-person, depending on your preference, simulating
+                                        real
+                                        interview settings.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                            <div class="faq-item">
+                                <i class="faq-icon bi bi-question-circle"></i>
+                                <h3>Will I get feedback after each session?</h3>
+                                <div class="faq-content">
+                                    <p> Yes, you’ll receive personalized feedback highlighting your strengths and areas
+                                        to
+                                        improve.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                            <div class="faq-item">
+                                <i class="faq-icon bi bi-question-circle"></i>
+                                <h3>
+                                    Do you cover technical as well as HR questions?
+                                </h3>
+                                <div class="faq-content">
+                                    <p> Absolutely. We customize the session to focus on technical, HR, or behavioral
+                                        interviews based on your career goals.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                            <div class="faq-item">
+                                <i class="faq-icon bi bi-question-circle"></i>
+                                <h3>How many sessions do I need before an actual interview?</h3>
+                                <div class="faq-content">
+                                    <p> Most users benefit from 2–3 sessions, but we adjust depending on your confidence
+                                        level and job type.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                            <div class="faq-item">
+                                <i class="faq-icon bi bi-question-circle"></i>
+                                <h3>Can I record my mock interview?</h3>
+                                <div class="faq-content">
+                                    <p> Yes, you can request a recording to review your performance later.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-lg-5 order-1 order-lg-2">
+                        <div class="faq-image-container">
+                            <img src="assets/img/testimonials/faq-img.png" class="img-fluid" alt="" data-aos="zoom-in"
+                                data-aos-delay="100">
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
     <!-- Faq section Ends -->
+
 
 
 
@@ -852,6 +1315,12 @@
             duration: 1000,
             once: true
         });
+
+        function openWhatsApp(message) {
+            const phoneNumber = "8124494755";
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(url, "_blank");
+        }
     </script>
 </body>
 

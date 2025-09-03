@@ -71,6 +71,21 @@
             margin-top: 30px;
         }
 
+        .faq .content p {
+            color: #333;
+            font-weight: 600;
+        }
+        
+      @media (min-width: 768px) {
+    .faq h2 {
+        margin-left: 29px;
+    }
+
+    .faq .content p {
+        margin-left: 23px;
+    }
+}
+
         p,
         li {
             font-size: 1rem;
@@ -124,14 +139,14 @@
 
         .container3 {
             display: flex;
-            max-width: 1080px;
+            max-width: 1159px;
             padding: 100px 20px 30px;
             margin: auto;
             align-items: center;
-            justify-content: space-between;
-            margin-top: 20px;
-            margin-bottom: 30px;
+            justify-content: center;
+            gap: 20px;
         }
+
 
         .left {
             max-width: 50%;
@@ -193,7 +208,7 @@
 
         .right {
             position: relative;
-            width: 45%;
+            width: 50%;
         }
 
         .right video {
@@ -226,9 +241,9 @@
             padding: 60px 80px;
             gap: 70px;
         }
-  .heading {
+
+        .heading {
             text-align: center;
-            margin-top: 40px;
             padding: 2px;
         }
 
@@ -241,6 +256,14 @@
         .heading p {
             font-size: 1.1rem;
             color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .faq-container {
+            padding: 20px;
         }
 
         .text {
@@ -255,8 +278,9 @@
         }
 
         .list {
-            margin-top: 20px;
             padding: 0;
+            margin: 0 0 20px 0;
+
         }
 
         .list li {
@@ -318,7 +342,6 @@
 
         .feedback-text h2 span {
             color: #333;
-            /* red highlight */
         }
 
         .feedback-text p {
@@ -353,15 +376,20 @@
             background: #fff;
         }
 
+        .faq-container {
+            padding: 20px;
+        }
+
         @media (max-width: 991px) {
 
             .container3,
             .section,
             .feedback-section {
                 flex-direction: column;
-                padding: 30px 30px;
+                padding: 0px 30px;
                 text-align: center;
             }
+
 
             .section,
             .feedback-section {
@@ -445,11 +473,20 @@
                 font-size: 12px;
                 padding: 8px 16px;
             }
+
+            .faq-container {
+                padding: 0px;
+            }
         }
 
         @media (max-width: 768px) {
             .container3 {
-                margin-top: 60px;
+                margin-top: 100px;
+                gap: 0px;
+            }
+
+            .faq-container {
+                padding: 0px;
             }
         }
 
@@ -461,11 +498,10 @@
             line-height: 1.3em;
         }
 
-
         h1 span.rotate span {
             display: block;
             color: #2c2a63;
-            animation: rotateWords 6s infinite;
+            animation: rotateWords 8s infinite;
         }
 
         @keyframes rotateWords {
@@ -494,7 +530,11 @@
             }
 
             75% {
-                transform: translateY(0%);
+                transform: translateY(-300%);
+            }
+
+            95% {
+                transform: translateY(-300%);
             }
 
             100% {
@@ -502,15 +542,379 @@
             }
         }
 
-        .text strong {
-            font-size: 19px;
-        }
+
 
         .faq {
-    display: flex;
-    flex-direction: column;
-    padding: 2px;
-}
+            display: flex;
+            flex-direction: column;
+            padding: 2px;
+        }
+
+
+        .faq-image-container {
+            background: rgba(237, 201, 175, 0.55);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 15px;
+            border-radius: 10px;
+            object-fit: contain;
+            height: 108vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .faq-image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 991px) {
+            .faq-image-container {
+                height: auto;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .faq-image-container {
+                height: auto;
+                padding: 8px;
+                border-radius: 8px;
+            }
+
+            .faq-image-container img {
+                width: 100%;
+            }
+        }
+
+        
+        .roadmap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 28px;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .roadmap-left {
+            flex: 1 1 45%;
+            min-width: 300px;
+            padding-right: 20px;
+        }
+
+        .roadmap-left h3 {
+            font-size: 16px;
+            color: #eebf9f;
+            margin-bottom: 10px;
+        }
+
+        .roadmap-left h2 {
+            font-size: 27px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .roadmap-left p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .roadmap-left .btn {
+            background: #eebf9f;
+            color: #2c2a63;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .roadmap-right {
+            flex: 1 1 50%;
+            min-width: 300px;
+            position: relative;
+        }
+
+        .roadmap-svg {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            height: 100%;
+            z-index: 1;
+        }
+
+        .roadmap-svg path {
+            stroke: #2c2a63;
+        }
+
+        .roadmap-step {
+            display: flex;
+            justify-content: flex-end;
+            gap: -14px;
+            align-items: flex-start;
+            margin: 17px -31px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .roadmap-step:nth-child(even) {
+            justify-content: flex-start;
+        }
+
+        .step-content {
+            background: #2c2a63;
+            color: #EDC9AF;
+            padding: 20px 24px;
+            border-radius: 79px;
+            max-width: 247px;
+            display: flex;
+            margin-left: 99px;
+            flex-direction: column;
+            font-size: 14px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-content1 {
+            background: #2c2a63;
+            color: #EDC9AF;
+            padding: 20px 24px;
+            border-radius: 79px;
+            max-width: 247px;
+            display: flex;
+            margin-left: 99px;
+            flex-direction: column;
+            font-size: 14px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .roadmap-step:nth-child(even) .step-content {
+            background: #EDC9AF;
+            color: #2c2a63;
+        }
+
+        .step-content span:first-child {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .step-description {
+            font-size: 12px;
+            margin-top: 5px;
+            opacity: 0.85;
+            font-weight: 500;
+        }
+
+        .step-number {
+            font-family: 'Raleway', sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+            color: #2c2a63;
+            display: flex;
+            flex-direction: column;
+            margin-left: 67px;
+            align-items: center;
+        }
+
+        .step-number1 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+            position: relative;
+            color: #2c2a63;
+            top: -14px;
+            right: 55%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 15px;
+        }
+
+        .step-number1 span {
+            font-size: 12px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        .step-number span {
+            font-size: 12px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        @media (max-width: 768px) {
+            .roadmap {
+                flex-direction: column;
+                padding: 30px 20px;
+            }
+
+            .roadmap-left,
+            .roadmap-right {
+                flex: 1 1 100%;
+                padding: 0;
+            }
+
+            .roadmap-step {
+                justify-content: flex-start !important;
+                margin: 40px 0;
+            }
+
+            .step-number {
+                display: none;
+            }
+
+            .roadmap-svg {
+                left: 20px;
+                transform: none;
+                width: 4px;
+                height: 93%;
+            }
+
+            .step-content {
+                max-width: 90%;
+                margin-left: 40px;
+                border-radius: 15px;
+                padding: 15px 20px;
+            }
+
+            .step-content span:first-child {
+                font-size: 16px;
+            }
+
+            .step-description {
+                font-weight: 500;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .roadmap {
+                flex-direction: column;
+                padding: 30px 20px;
+            }
+
+            .roadmap-left {
+                flex: 1 1 100%;
+                padding-bottom: 40px;
+            }
+
+            .roadmap-right {
+                flex: 1 1 100%;
+                position: relative;
+                padding-top: 20px;
+                min-height: 600px;
+            }
+
+            .roadmap-step {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                position: relative;
+                margin: 30px 0;
+            }
+
+            .roadmap-step:nth-child(odd) {
+                justify-content: flex-end;
+                padding-right: 20px;
+            }
+
+            .roadmap-step:nth-child(even) {
+                justify-content: flex-start;
+                padding-left: 20px;
+            }
+
+            .step-content {
+                max-width: 90%;
+                border-radius: 43px;
+                padding: 15px 20px;
+                font-size: 13px;
+            }
+
+            .step-number {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 10px;
+                font-size: 36px;
+            }
+
+            .roadmap-svg {
+                left: 50%;
+                width: 103px;
+                transform: translateX(-50%);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .roadmap {
+                flex-direction: column;
+                padding: 30px 20px;
+            }
+
+            .roadmap-step {
+                display: flex;
+                align-items: center;
+                margin: 50px 0;
+                position: relative;
+            }
+
+            .step-number {
+                position: absolute;
+                left: 13%;
+                transform: translateX(-50%);
+                font-size: 28px;
+                font-weight: bold;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .step-number1 {
+                position: absolute;
+                left: 83%;
+                transform: translateX(-50%);
+                font-size: 28px;
+                font-weight: bold;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .roadmap-step:nth-child(odd) .step-content {
+                margin-right: auto;
+                margin-left: 0;
+                text-align: left;
+            }
+
+            .roadmap-step:nth-child(even) .step-content {
+                margin-left: auto;
+                margin-right: 0;
+                text-align: left;
+            }
+
+            .step-content {
+                max-width: 75%;
+                border-radius: 40px;
+                padding: 15px 20px;
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .step-content,
+            .step-content1 {
+                margin-left: 20px;
+                max-width: 80%;
+            }
+        }
     </style>
 
 </head>
@@ -548,25 +952,26 @@
     </header>
     <!-- Navbar-Ends -->
 
+
+    <!-- Home section Starts -->
     <div class="container3">
-        <!-- Left -->
         <div class="left">
             <h1>
-                <span>Career Blueprint,</span>
+                <span>Your Resume</span>
                 <span class="rotate">
-                    <span>Coding</span>
-                    <span>Designing</span>
-                    <span>Developer</span>
+                    <span>Powerful</span>
+                    <span>Professional</span>
+                    <span>Recruiter-Ready</span>
+                    <span>Impactful</span>
                 </span>
-                <span>Simplified!!!</span>
             </h1>
-            <a href="#" class="btn1">Sign Up for Free</a>
+
 
             <div class="checks">
-                <span>Aptitude</span>
-                <span>Coding</span>
-                <span>Interview Prep</span>
-                <span>New Age Skills</span>
+                <span>ATS-Friendly</span>
+                <span>Modern Design</span>
+                <span>Expert Language</span>
+                <p>Transform your resume into a career magnet that recruiters can’t ignore.</p>
             </div>
             <div class="content">
                 <div class="stats">
@@ -579,6 +984,10 @@
                 </div>
                 <p>10k+ Active Learners</p>
             </div>
+            <a href="#" class="btn1"
+                onclick="openWhatsApp('Hi Career Blueprint, I want help with Resume Writing & Building. Please share the details.')">
+                Book Your Free Call
+            </a>
         </div>
         <div class="right">
             <div class="bg-effect"></div>
@@ -588,7 +997,9 @@
             </video>
         </div>
     </div>
-    <!-- Section 1: With Heading & Subheading -->
+    <!-- Home section Ends -->
+
+    <!-- Hero section Starts -->
     <div class="heading">
         <h2>Turn Your Resume Into Your Strongest First Impression</h2>
         <p>Your resume is more than just a list of jobs—it’s your personal brand. We help transform it into a powerful
@@ -597,12 +1008,9 @@
     </div>
 
     <section class="section">
-        <!-- Left side Image -->
         <div class="image">
             <img src="assets/img/images/section1.png" alt="Interview Setup">
         </div>
-
-        <!-- Right side Content -->
         <div class="text">
             <h3>Professional Resume Review</h3>
             <strong>See What Recruiters See — Before They Do.</strong>
@@ -614,15 +1022,15 @@
                     Optimize clarity, structure, and tone for maximum impact
                 </li>
             </ul>
-            <a href="#" class="btn3">Review My Resume</a>
+            <a href="#" class="btn3"
+                onclick="openWhatsApp('Hi Career Blueprint, I want help with Resume Writing & Building. Please share the details.')">
+                Review My Resume
+            </a>
         </div>
     </section>
 
     <div class="divider"></div>
-
-    <!-- Section 2: Without Heading & Subheading -->
     <section class="section">
-        <!-- Left side Content -->
         <div class="text">
             <h3>Tailored Resume Building</h3>
             <strong>A Resume Built Around Your Career Goals</strong>
@@ -632,10 +1040,11 @@
                 <li>Optimized for ATS (Applicant Tracking Systems) to ensure recruiters actually see it</li>
                 <li>Clean, modern formatting that grabs attention at first glance</li>
             </ul>
-            <a href="#" class="btn3">Build My Resume</a>
+            <a href="#" class="btn3"
+                onclick="openWhatsApp('Hi Career Blueprint, I want help with Resume Writing & Building. Please share the details.')">
+                Build My Resume
+            </a>
         </div>
-
-        <!-- Right side Image -->
         <div class="image">
             <img src="assets/img/images/section2.png" alt="Interview Setup">
         </div>
@@ -643,12 +1052,9 @@
 
 
     <section class="section">
-        <!-- Left side Image -->
         <div class="image">
             <img src="assets/img/images/section3.png" alt="Interview Setup">
         </div>
-
-        <!-- Right side Content -->
         <div class="text">
             <h3>Beyond the Resume</h3>
             <strong>Build Your Personal Brand Across Platforms</strong>
@@ -660,87 +1066,155 @@
                     Showcase your skills confidently to make you interview-ready
                 </li>
             </ul>
-            <a href="#" class="btn3">Boost My Profile</a>
+            <a href="#" class="btn3"
+                onclick="openWhatsApp('Hi Career Blueprint, I want help with Resume Writing & Building. Please share the details.')">
+                Boost My Profile
+            </a>
         </div>
     </section>
+    <!-- Hero section Ends -->
+
+        <!-- Roadmap section starts -->
+    <section class="roadmap">
+        <div class="roadmap-left">
+            <h2 style="color: #2c2a63;">
+                <i class="fa-solid fa-quote-left me-2"></i>
+                Crafting Your Perfect Resume
+                <i class="fa-solid fa-quote-right ms-2"></i>
+            </h2>
+            <p>From sharing your details to receiving a polished, recruiter-ready resume, our writers ensure your strengths stand out. You’ll review drafts and get a final version ready for job applications.</p>
+            <a href="#" class="btn">Contact Us →</a>
+        </div>
+
+        <div class="roadmap-right">
+            <svg class="roadmap-svg" width="100" height="800" viewBox="0 0 100 800" preserveAspectRatio="none">
+                <path d="M50 0 Q 100 100, 50 200 Q 0 300, 50 400 Q 100 500, 50 600 Q 0 700, 50 800" stroke="#ccc"
+                    stroke-dasharray="4,8" stroke-width="3" fill="none" />
+            </svg>
+
+            <div class="roadmap-step">
+                <div class="step-content">
+                    <span>Share Resume / Career Details</span>
+                </div>
+                <div class="step-number">
+                    <span>STEP</span>
+                    01
+                </div>
+            </div>
+
+            <div class="roadmap-step">
+                <div class="step-content1">
+                    <span>Requirement Discussion (Profile, Job Role, Industry)</span>
+                </div>
+                <div class="step-number1">
+                    <span>STEP</span>
+                    02
+                </div>
+            </div>
+
+            <div class="roadmap-step">
+                <div class="step-content">
+                    <span>First Draft (Review + Feedback)</span>
+                </div>
+                <div class="step-number">
+                    <span>STEP</span>
+                    03
+                </div>
+            </div>
+
+            <div class="roadmap-step">
+                <div class="step-content1">
+                    <span>Final Resume Delivery</span>
+                </div>
+                <div class="step-number1">
+                    <span>STEP</span>
+                    04
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Roadmap section Ends -->
+
 
     <!-- Faq section starts -->
     <section id="faq" class="faq section light-background">
-        <div class="container-fluid">
-            <div class="row gy-4">
-                <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-                    <div class="content" data-aos="fade-up" data-aos-delay="100">
-                        <div class="faq">
-                            <h2 style="color: #2c2a63; font-size: 28px;">
-                                <i class="fa-solid fa-quote-left me-2"></i>
-                                <span>Frequently Asked </span><strong>Questions</strong>
-                                <i class="fa-solid fa-quote-right ms-2"></i>
-                            </h2>
-                            <p>
-                                Still wondering how a resume makeover can help? Explore our FAQs to learn how expert
-                                feedback, personalized building, and profile alignment can give you the edge in today’s
-                                job market.
+        <div class="faq-container">
+            <div class="container-fluid">
+                <div class="row gy-4">
+                    <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+                        <div class="content" data-aos="fade-up" data-aos-delay="100">
+                            <div class="faq">
+                                <h2 style="color: #2c2a63; font-size: 28px;">
+                                    <i class="fa-solid fa-quote-left me-2"></i>
+                                    <span>Frequently Asked </span><strong>Questions</strong>
+                                    <i class="fa-solid fa-quote-right ms-2"></i>
+                                </h2>
+                                <p>
+                                    Still wondering how a resume makeover can help? Explore our FAQs to learn how expert
+                                    feedback, personalized building, and profile alignment can give you the edge in
+                                    today’s
+                                    job market.
 
-                            </p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
+                            <div class="faq-item faq-active">
+                                <i class="faq-icon bi bi-question-circle"></i>
+                                <h3>What if I don’t have a resume yet?</h3>
+                                <div class="faq-content">
+                                    <p> We can help you build one from scratch, tailored to your career goals.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                            <div class="faq-item">
+                                <i class="faq-icon bi bi-question-circle"></i>
+                                <h3>
+                                    Do you review resumes for specific industries?
+                                </h3>
+                                <div class="faq-content">
+                                    <p>Yes, we customize resumes for IT, finance, healthcare, creative fields, and more.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                            <div class="faq-item">
+                                <i class="faq-icon bi bi-question-circle"></i>
+                                <h3>
+                                    Will my resume be ATS-friendly?
+                                </h3>
+                                <div class="faq-content">
+                                    <p> Absolutely, we format and optimize your resume so it passes Applicant Tracking
+                                        Systems.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                            <div class="faq-item">
+                                <i class="faq-icon bi bi-question-circle"></i>
+                                <h3>How long does it take to get a reviewed resume back?</h3>
+                                <div class="faq-content">
+                                    <p> Typically 2–3 business days, depending on complexity.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                            <div class="faq-item">
+                                <i class="faq-icon bi bi-question-circle"></i>
+                                <h3>Do you also provide cover letter writing?</h3>
+                                <div class="faq-content">
+                                    <p> Yes, we can draft a professional cover letter to complement your resume.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
-                        <div class="faq-item faq-active">
-                            <i class="faq-icon bi bi-question-circle"></i>
-                            <h3>What if I don’t have a resume yet?</h3>
-                            <div class="faq-content">
-                                <p> We can help you build one from scratch, tailored to your career goals.</p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
+                    <div class="col-lg-5 order-1 order-lg-2">
+                        <div class="faq-image-container">
+                            <img src="assets/img/testimonials/faq-img.png" class="img-fluid" alt="" data-aos="zoom-in"
+                                data-aos-delay="100">
                         </div>
-                        <div class="faq-item">
-                            <i class="faq-icon bi bi-question-circle"></i>
-                            <h3>
-                                Do you review resumes for specific industries?
-                            </h3>
-                            <div class="faq-content">
-                                <p>Yes, we customize resumes for IT, finance, healthcare, creative fields, and more.
-                                </p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div>
-                        <div class="faq-item">
-                            <i class="faq-icon bi bi-question-circle"></i>
-                            <h3>
-                                Will my resume be ATS-friendly?
-                            </h3>
-                            <div class="faq-content">
-                                <p> Absolutely, we format and optimize your resume so it passes Applicant Tracking
-                                    Systems.
-                                </p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div>
-                        <div class="faq-item">
-                            <i class="faq-icon bi bi-question-circle"></i>
-                            <h3>How long does it take to get a reviewed resume back?</h3>
-                            <div class="faq-content">
-                                <p> Typically 2–3 business days, depending on complexity.</p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div>
-                        <div class="faq-item">
-                            <i class="faq-icon bi bi-question-circle"></i>
-                            <h3>Do you also provide cover letter writing?</h3>
-                            <div class="faq-content">
-                                <p> Yes, we can draft a professional cover letter to complement your resume.
-                                </p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 order-1 order-lg-2">
-                    <div style=" background: rgba(237, 201, 175, 0.55);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px); padding: 15px; border-radius: 10px;object-fit:contain;">
-                        <img src="assets/img/testimonials/faq-img.png" class="img-fluid" alt="" data-aos="zoom-in"
-                            data-aos-delay="100">
                     </div>
                 </div>
             </div>
@@ -822,6 +1296,12 @@
             duration: 1000,
             once: true
         });
+
+          function openWhatsApp(message) {
+            const phoneNumber = "8124494755";
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(url, "_blank");
+        }
     </script>
 </body>
 
