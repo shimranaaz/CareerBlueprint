@@ -24,7 +24,7 @@
     <title>Networking- Career Blueprints</title>
 
     <style>
-        body {
+         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(to bottom right, #fdfdfd, #f1f3f6);
             color: #333;
@@ -69,6 +69,7 @@
         h2 {
             font-size: 1.5rem;
             margin-top: 30px;
+
         }
 
         .faq .content p {
@@ -76,16 +77,15 @@
             font-weight: 600;
         }
 
-      @media (min-width: 768px) {
-    .faq h2 {
-        margin-left: 29px;
-    }
+        @media (min-width: 768px) {
+            .faq h2 {
+                margin-left: 29px;
+            }
 
-    .faq .content p {
-        margin-left: 23px;
-    }
-}
-
+            .faq .content p {
+                margin-left: 23px;
+            }
+        }
 
         p,
         li {
@@ -148,13 +148,12 @@
             gap: 20px;
         }
 
-
         .left {
             max-width: 50%;
         }
 
         .left h1 {
-            font-size: 2.5rem;
+            font-size: 38px;
             line-height: 1.2;
         }
 
@@ -261,10 +260,6 @@
             margin: 0 auto;
             text-align: center;
             line-height: 1.6;
-        }
-
-        .faq-container {
-            padding: 20px;
         }
 
         .text {
@@ -391,10 +386,10 @@
                 text-align: center;
             }
 
-
             .section,
             .feedback-section {
                 gap: 30px;
+                margin-top: 20px;
             }
 
             .container3 .right,
@@ -428,6 +423,11 @@
             }
 
             .heading p {
+                font-size: 15px;
+                padding: 14px;
+            }
+
+            .heading strong {
                 font-size: 15px;
             }
 
@@ -485,10 +485,6 @@
                 margin-top: 100px;
                 gap: 0px;
             }
-
-            .faq-container {
-                padding: 0px;
-            }
         }
 
         h1 span.rotate {
@@ -544,13 +540,11 @@
         }
 
 
-
         .faq {
             display: flex;
             flex-direction: column;
             padding: 2px;
         }
-
 
         .faq-image-container {
             background: rgba(237, 201, 175, 0.55);
@@ -580,7 +574,6 @@
         @media (max-width: 576px) {
             .faq-image-container {
                 height: auto;
-                padding: 8px;
                 border-radius: 8px;
             }
 
@@ -589,7 +582,6 @@
             }
         }
 
-        
         .roadmap {
             display: flex;
             flex-wrap: wrap;
@@ -705,6 +697,11 @@
             font-size: 14px;
         }
 
+        .step-content1 span {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
         .step-description {
             font-size: 12px;
             margin-top: 5px;
@@ -752,7 +749,13 @@
         @media (max-width: 768px) {
             .roadmap {
                 flex-direction: column;
-                padding: 30px 20px;
+                padding: 5px 20px;
+            }
+
+            .divider {
+                height: 1px;
+                background: #ddd;
+                margin: 16px 80px;
             }
 
             .roadmap-left,
@@ -774,7 +777,7 @@
                 left: 20px;
                 transform: none;
                 width: 4px;
-                height: 93%;
+                height: 100%;
             }
 
             .step-content {
@@ -794,10 +797,6 @@
         }
 
         @media (max-width: 768px) {
-            .roadmap {
-                flex-direction: column;
-                padding: 30px 20px;
-            }
 
             .roadmap-left {
                 flex: 1 1 100%;
@@ -852,11 +851,6 @@
         }
 
         @media (max-width: 768px) {
-            .roadmap {
-                flex-direction: column;
-                padding: 30px 20px;
-            }
-
             .roadmap-step {
                 display: flex;
                 align-items: center;
@@ -994,7 +988,7 @@
         <div class="right">
             <div class="bg-effect"></div>
             <video autoplay muted loop playsinline>
-                <source src="assets/img/images/networking (1).mp4" type="video/mp4">
+                <source src="assets/img/images/networking.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -1083,7 +1077,10 @@
                 <i class="fa-solid fa-quote-right ms-2"></i>
             </h2>
             <p>We connect you with valuable industry insights and networking tips. From profile optimization to outreach guidance, we help you grow the connections that open new opportunities.</p>
-            <a href="#" class="btn">Contact Us →</a>
+            <a href="javascript:void(0);" class="read-more"
+            onclick="openWhatsApp('Hi, could you explain how your process works?')">
+            <span>Contact Us</span><i class="bi bi-arrow-right"></i>
+          </a>
         </div>
 
         <div class="roadmap-right">
@@ -1150,9 +1147,7 @@
                                     <i class="fa-solid fa-quote-right ms-2"></i>
                                 </h2>
                                 <p>
-                                    Still have questions? We’ve got answers. Explore our most common queries to see how
-                                    Interview Preparation can help you feel confident, prepared, and ready to succeed in
-                                    every interview.
+                               Not sure how networking can open doors for you? Explore our FAQs to see how profile optimization, smart strategies, and long-term visibility can help you build meaningful connections and advance your career.
 
                                 </p>
                             </div>
@@ -1160,21 +1155,17 @@
                         <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
                             <div class="faq-item faq-active">
                                 <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>How are the mock interviews conducted?</h3>
+                                <h3>Why is networking important for my career?</h3>
                                 <div class="faq-content">
-                                    <p>We conduct them virtually or in-person, depending on your preference, simulating
-                                        real
-                                        interview settings.</p>
+                                    <p> Networking opens doors to hidden job opportunities, mentorship, and industry insights.</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div>
                             <div class="faq-item">
                                 <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>Will I get feedback after each session?</h3>
+                                <h3>Do you teach how to use LinkedIn effectively?</h3>
                                 <div class="faq-content">
-                                    <p> Yes, you’ll receive personalized feedback highlighting your strengths and areas
-                                        to
-                                        improve.
+                                    <p>Yes, we guide you on optimizing your profile, connecting with professionals, and engaging meaningfully.
                                     </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -1182,29 +1173,27 @@
                             <div class="faq-item">
                                 <i class="faq-icon bi bi-question-circle"></i>
                                 <h3>
-                                    Do you cover technical as well as HR questions?
+                                   What if I’m shy or introverted?
                                 </h3>
                                 <div class="faq-content">
-                                    <p> Absolutely. We customize the session to focus on technical, HR, or behavioral
-                                        interviews based on your career goals.
+                                    <p>We provide strategies for building confidence and networking effectively even as an introvert.
                                     </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div>
                             <div class="faq-item">
                                 <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>How many sessions do I need before an actual interview?</h3>
+                                <h3>Will you help me practice networking conversations?</h3>
                                 <div class="faq-content">
-                                    <p> Most users benefit from 2–3 sessions, but we adjust depending on your confidence
-                                        level and job type.</p>
+                                    <p>Definitely. We role-play real networking scenarios so you feel prepared.</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div>
                             <div class="faq-item">
                                 <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>Can I record my mock interview?</h3>
+                                <h3>Can networking really help me land a job?</h3>
                                 <div class="faq-content">
-                                    <p> Yes, you can request a recording to review your performance later.
+                                    <p>Yes—studies show a large percentage of jobs are filled through networking rather than job boards.
                                     </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>

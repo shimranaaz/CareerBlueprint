@@ -389,6 +389,7 @@
             .section,
             .feedback-section {
                 gap: 30px;
+                margin-top: 20px;
             }
 
             .container3 .right,
@@ -573,7 +574,6 @@
         @media (max-width: 576px) {
             .faq-image-container {
                 height: auto;
-                padding: 8px;
                 border-radius: 8px;
             }
 
@@ -697,6 +697,11 @@
             font-size: 14px;
         }
 
+        .step-content1 span {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
         .step-description {
             font-size: 12px;
             margin-top: 5px;
@@ -744,7 +749,13 @@
         @media (max-width: 768px) {
             .roadmap {
                 flex-direction: column;
-                padding: 30px 20px;
+                padding: 5px 20px;
+            }
+
+            .divider {
+                height: 1px;
+                background: #ddd;
+                margin: 16px 80px;
             }
 
             .roadmap-left,
@@ -766,7 +777,7 @@
                 left: 20px;
                 transform: none;
                 width: 4px;
-                height: 93%;
+                height: 100%;
             }
 
             .step-content {
@@ -786,10 +797,6 @@
         }
 
         @media (max-width: 768px) {
-            .roadmap {
-                flex-direction: column;
-                padding: 30px 20px;
-            }
 
             .roadmap-left {
                 flex: 1 1 100%;
@@ -844,11 +851,6 @@
         }
 
         @media (max-width: 768px) {
-            .roadmap {
-                flex-direction: column;
-                padding: 30px 20px;
-            }
-
             .roadmap-step {
                 display: flex;
                 align-items: center;
@@ -1097,7 +1099,10 @@
             <p>We assess your career goals, conduct mock interviews, and share feedback so you build confidence. Our
                 process
                 ensures you’re ready to impress in real interviews.</p>
-            <a href="#" class="btn">Contact Us →</a>
+            <a href="javascript:void(0);" class="read-more"
+                onclick="openWhatsApp('Hi, could you explain how your process works?')">
+                <span>Contact Us</span><i class="bi bi-arrow-right"></i>
+            </a>
         </div>
 
         <div class="roadmap-right">

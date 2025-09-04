@@ -1473,12 +1473,13 @@ section,
 }
 
 .faq .faq-container .faq-item h3 {
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 24px;
-  margin: 0 30px 0 32px;
-  transition: 0.3s;
-  cursor: pointer;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: start;
+    margin: 0 30px 0 32px;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .faq .faq-container .faq-item h3 span {
@@ -1499,8 +1500,9 @@ section,
 }
 
 .faq .faq-container .faq-item .faq-content p {
-  margin-bottom: 0;
-  overflow: hidden;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-align: start;
 }
 
 .faq .faq-container .faq-item .faq-icon {

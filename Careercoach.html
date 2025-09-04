@@ -69,22 +69,23 @@
         h2 {
             font-size: 1.5rem;
             margin-top: 30px;
+
         }
 
         .faq .content p {
             color: #333;
             font-weight: 600;
         }
-        
-       @media (min-width: 768px) {
-    .faq h2 {
-        margin-left: 29px;
-    }
 
-    .faq .content p {
-        margin-left: 23px;
-    }
-}
+        @media (min-width: 768px) {
+            .faq h2 {
+                margin-left: 29px;
+            }
+
+            .faq .content p {
+                margin-left: 23px;
+            }
+        }
 
         p,
         li {
@@ -147,13 +148,12 @@
             gap: 20px;
         }
 
-
         .left {
             max-width: 50%;
         }
 
         .left h1 {
-            font-size: 2.5rem;
+            font-size: 38px;
             line-height: 1.2;
         }
 
@@ -260,10 +260,6 @@
             margin: 0 auto;
             text-align: center;
             line-height: 1.6;
-        }
-
-        .faq-container {
-            padding: 20px;
         }
 
         .text {
@@ -390,10 +386,10 @@
                 text-align: center;
             }
 
-
             .section,
             .feedback-section {
                 gap: 30px;
+                margin-top: 20px;
             }
 
             .container3 .right,
@@ -427,6 +423,11 @@
             }
 
             .heading p {
+                font-size: 15px;
+                padding: 14px;
+            }
+
+            .heading strong {
                 font-size: 15px;
             }
 
@@ -484,10 +485,6 @@
                 margin-top: 100px;
                 gap: 0px;
             }
-
-            .faq-container {
-                padding: 0px;
-            }
         }
 
         h1 span.rotate {
@@ -543,13 +540,11 @@
         }
 
 
-
         .faq {
             display: flex;
             flex-direction: column;
             padding: 2px;
         }
-
 
         .faq-image-container {
             background: rgba(237, 201, 175, 0.55);
@@ -579,7 +574,6 @@
         @media (max-width: 576px) {
             .faq-image-container {
                 height: auto;
-                padding: 8px;
                 border-radius: 8px;
             }
 
@@ -588,7 +582,6 @@
             }
         }
 
-        
         .roadmap {
             display: flex;
             flex-wrap: wrap;
@@ -704,6 +697,11 @@
             font-size: 14px;
         }
 
+        .step-content1 span {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
         .step-description {
             font-size: 12px;
             margin-top: 5px;
@@ -751,7 +749,13 @@
         @media (max-width: 768px) {
             .roadmap {
                 flex-direction: column;
-                padding: 30px 20px;
+                padding: 5px 20px;
+            }
+
+            .divider {
+                height: 1px;
+                background: #ddd;
+                margin: 16px 80px;
             }
 
             .roadmap-left,
@@ -773,7 +777,7 @@
                 left: 20px;
                 transform: none;
                 width: 4px;
-                height: 93%;
+                height: 100%;
             }
 
             .step-content {
@@ -793,10 +797,6 @@
         }
 
         @media (max-width: 768px) {
-            .roadmap {
-                flex-direction: column;
-                padding: 30px 20px;
-            }
 
             .roadmap-left {
                 flex: 1 1 100%;
@@ -851,11 +851,6 @@
         }
 
         @media (max-width: 768px) {
-            .roadmap {
-                flex-direction: column;
-                padding: 30px 20px;
-            }
-
             .roadmap-step {
                 display: flex;
                 align-items: center;
@@ -1009,7 +1004,7 @@
 
     <section class="section">
         <div class="image">
-            <img src="assets/img/images/section1 (1).png" alt="Interview Setup">
+            <img src="assets/img/images/section.png" alt="Interview Setup">
         </div>
         <div class="text">
             <h3>Clarity Before Action</h3>
@@ -1050,7 +1045,7 @@
     <section class="section">
 
         <div class="image">
-            <img src="assets/img/images/Trainee.png" alt="Interview Setup">
+            <img src="assets/img/images/trainee.png" alt="Interview Setup">
         </div>
         <div class="text">
             <h3>Train for the Real World, Not Just Theory</h3>
@@ -1077,7 +1072,10 @@
                 <i class="fa-solid fa-quote-right ms-2"></i>
             </h2>
             <p>Our coaching roadmap starts with understanding your ambitions. We then guide you with strategies, tools, and actionable steps to help you move toward your dream career.</p>
-            <a href="#" class="btn">Contact Us →</a>
+            <a href="javascript:void(0);" class="read-more"
+            onclick="openWhatsApp('Hi, could you explain how your process works?')">
+            <span>Contact Us</span><i class="bi bi-arrow-right"></i>
+          </a>
         </div>
 
         <div class="roadmap-right">
