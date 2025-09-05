@@ -150,7 +150,12 @@
               class="fab fa-instagram"></i></a>
           <a href="https://www.linkedin.com/company/careers-blueprint/" target="_blank"><i
               class="bi bi-linkedin"></i></a>
-          <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://wa.me/8124494755?text=Hi%2C%20I%E2%80%99d%20like%20to%20get%20in%20touch%20regarding%20your%20services."
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+
         </div>
       </nav>
       <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
@@ -267,10 +272,11 @@
               class="fab fa-instagram"></i></a>
           <a href="https://www.linkedin.com/company/careers-blueprint/" target="_blank"><i
               class="fab fa-linkedin-in"></i></a>
-          <a href="https://wa.me/8124494755?text=Hi%2C%20I%E2%80%99ve%20completed%20the%20payment.%20Please%20confirm."
-            onclick="openWhatsApp(); return false;" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
+                            <a href="https://wa.me/8124494755?text=Hi%2C%20I%E2%80%99d%20like%20to%20get%20in%20touch%20regarding%20your%20services."
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
         </div>
       </div>
     </div>
@@ -281,7 +287,7 @@
   <!-- Footer section Ends -->
 
   <!-- Whatsapp icon -->
-  <a href="javascript:void(0);" onclick="openWhatsApp()"
+  <a href="javascript:void(0);" onclick="openWhatsApp('Hi, I’d like to get in touch regarding your services.')"
     class="scroll-top d-flex align-items-center justify-content-center" style="font-size: 24px;"
     title="Chat on WhatsApp">
     <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
@@ -306,6 +312,11 @@
       duration: 1000,
       once: true
     });
+       function openWhatsApp(message) {
+      const phoneNumber = "8124494755";
+      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+    }
   </script>
 </body>
 

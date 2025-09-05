@@ -24,7 +24,7 @@
     <title>Career-Coach - Career Blueprints</title>
 
     <style>
-        body {
+          body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(to bottom right, #fdfdfd, #f1f3f6);
             color: #333;
@@ -191,21 +191,6 @@
             color: #1db954;
         }
 
-        .stats {
-            margin-top: 20px;
-            display: flex;
-            align-items: center;
-        }
-
-        .stats img {
-            border-radius: 50%;
-            margin-right: -5px;
-        }
-
-        .stats p {
-            font-weight: bold;
-        }
-
         .right {
             position: relative;
             width: 50%;
@@ -229,16 +214,11 @@
             opacity: 0.7;
         }
 
-        .content {
-            display: flex;
-            gap: 30px;
-        }
-
         .section {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 60px 80px;
+            padding: 50px 80px;
             gap: 70px;
         }
 
@@ -312,12 +292,6 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
-        .divider {
-            height: 2px;
-            background: #ddd;
-            margin: 0 80px;
-        }
-
         .feedback-section {
             display: flex;
             align-items: center;
@@ -337,7 +311,7 @@
         }
 
         .feedback-text h2 span {
-            color: #333;
+            color: #1db954;
         }
 
         .feedback-text p {
@@ -537,6 +511,7 @@
             100% {
                 transform: translateY(0%);
             }
+
         }
 
 
@@ -579,6 +554,12 @@
 
             .faq-image-container img {
                 width: 100%;
+            }
+
+            .learners span {
+                margin-left: 15px;
+                font-weight: bold;
+                font-size: 13px;
             }
         }
 
@@ -746,17 +727,26 @@
             color: #444;
         }
 
+        .stat {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .stat i {
+            color: #1db954;
+            margin-right: 10px;
+            font-size: 22px;
+        }
+
         @media (max-width: 768px) {
             .roadmap {
                 flex-direction: column;
                 padding: 5px 20px;
             }
 
-            .divider {
-                height: 1px;
-                background: #ddd;
-                margin: 16px 80px;
-            }
 
             .roadmap-left,
             .roadmap-right {
@@ -909,6 +899,14 @@
                 margin-left: 20px;
                 max-width: 80%;
             }
+
+            .stat {
+                font-size: 15px;
+            }
+
+            .stat i {
+                font-size: 15px;
+            }
         }
     </style>
 
@@ -939,7 +937,11 @@
                             class="fab fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/company/careers-blueprint/" target="_blank"><i
                             class="bi bi-linkedin"></i></a>
-                    <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                   <a href="https://wa.me/8124494755?text=Hi%2C%20I%E2%80%99d%20like%20to%20get%20in%20touch%20regarding%20your%20services."
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
                 </div>
             </nav>
             <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
@@ -967,16 +969,14 @@
                 <span>Career Transitions</span>
                 <p>Work 1:1 with a coach to unlock your strengths and design your path forward</p>
             </div>
-            <div class="content">
-                <div class="stats">
-                    <img src="https://randomuser.me/api/portraits/women/44.jpg" width="40">
-                    <img src="https://randomuser.me/api/portraits/men/46.jpg" width="40">
-                    <img src="https://randomuser.me/api/portraits/men/47.jpg" width="40">
-                    <img src="https://randomuser.me/api/portraits/women/48.jpg" width="40">
-                    <img src="https://randomuser.me/api/portraits/men/79.jpg" width="40">
+            <div class="stat">
+                <i class="fas fa-arrow-up"></i>
+                30% higher chance of getting a job‡
+            </div>
 
-                </div>
-                <p>10k+ Active Learners</p>
+            <div class="stat">
+                <i class="fas fa-arrow-up"></i>
+                42% higher response rate from recruiters‡
             </div>
             <a href="#" class="btn1"
                 onclick="openWhatsApp('Hi Career Blueprint, I’m interested in Career Coaching. Please share how I can start.')">
@@ -1020,8 +1020,6 @@
             </a>
         </div>
     </section>
-
-    <div class="divider"></div>
     <section class="section">
         <div class="text">
             <h3>Learn by Doing, Not Just Listening</h3>
@@ -1063,19 +1061,20 @@
     </section>
     <!-- Hero section Ends -->
 
-        <!-- Roadmap section starts -->
+    <!-- Roadmap section starts -->
     <section class="roadmap">
         <div class="roadmap-left">
             <h2 style="color: #2c2a63;">
                 <i class="fa-solid fa-quote-left me-2"></i>
-             Personalized Career Guidance
+                Personalized Career Guidance
                 <i class="fa-solid fa-quote-right ms-2"></i>
             </h2>
-            <p>Our coaching roadmap starts with understanding your ambitions. We then guide you with strategies, tools, and actionable steps to help you move toward your dream career.</p>
+            <p>Our coaching roadmap starts with understanding your ambitions. We then guide you with strategies, tools,
+                and actionable steps to help you move toward your dream career.</p>
             <a href="javascript:void(0);" class="read-more"
-            onclick="openWhatsApp('Hi, could you explain how your process works?')">
-            <span>Contact Us</span><i class="bi bi-arrow-right"></i>
-          </a>
+                onclick="openWhatsApp('Hi, could you explain how your process works?')">
+                <span>Contact Us</span><i class="bi bi-arrow-right"></i>
+            </a>
         </div>
 
         <div class="roadmap-right">
@@ -1127,7 +1126,7 @@
         </div>
     </section>
     <!-- Roadmap section Ends -->
-    
+
     <!-- Faq section starts -->
     <section id="faq" class="faq section light-background">
         <div class="faq-container">
@@ -1256,10 +1255,11 @@
                             class="fab fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/company/careers-blueprint/" target="_blank"><i
                             class="fab fa-linkedin-in"></i></a>
-                    <a href="https://wa.me/8124494755?text=Hi%2C%20I%E2%80%99ve%20completed%20the%20payment.%20Please%20confirm."
-                        onclick="openWhatsApp(); return false;" target="_blank" rel="noopener noreferrer">
+                   <a href="https://wa.me/8124494755?text=Hi%2C%20I%E2%80%99d%20like%20to%20get%20in%20touch%20regarding%20your%20services."
+                        target="_blank" rel="noopener noreferrer">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
+
                 </div>
             </div>
         </div>
@@ -1270,7 +1270,7 @@
     <!-- Footer section Ends -->
 
     <!-- Whatsapp icon -->
-    <a href="javascript:void(0);" onclick="openWhatsApp()"
+    <a href="javascript:void(0);" onclick="openWhatsApp('Hi, I’d like to get in touch regarding your services.')"
         class="scroll-top d-flex align-items-center justify-content-center" style="font-size: 24px;"
         title="Chat on WhatsApp">
         <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
