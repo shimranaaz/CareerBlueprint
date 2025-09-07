@@ -141,7 +141,7 @@
         .container3 {
             display: flex;
             max-width: 1159px;
-            padding: 100px 20px 30px;
+            padding: 100px 20px 0px;
             margin: auto;
             align-items: center;
             justify-content: center;
@@ -182,7 +182,7 @@
         }
 
         .checks span {
-            margin-right: 15px;
+            margin-right: 20px;
             font-size: 1rem;
         }
 
@@ -352,12 +352,15 @@
 
         @media (max-width: 991px) {
 
-            .container3,
             .section,
             .feedback-section {
                 flex-direction: column;
                 padding: 0px 30px;
                 text-align: center;
+            }
+
+            .container3 {
+                flex-direction: column-reverse;
             }
 
             .section,
@@ -435,6 +438,7 @@
             .heading h2,
             .feedback-text h2 {
                 font-size: 1.3rem;
+                margin: 10px;
             }
 
             p,
@@ -456,7 +460,7 @@
 
         @media (max-width: 768px) {
             .container3 {
-                margin-top: 100px;
+                margin-top: 10px;
                 gap: 0px;
             }
         }
@@ -983,12 +987,10 @@
                 42% higher response rate from recruiters‡
             </div>
         </div>
-        <div class="right">
-            <div class="bg-effect"></div>
-            <video autoplay muted loop playsinline>
-                <source src="assets/img/images/networking.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+        <div class="image-section">
+            <img src="assets/img/images/linkedin.png" class="resume-bg" alt="Resume Background" />
+            <img src="assets/img/images/left2.png" class="floating-left" alt="Floating Left Panel" />
+            <img src="assets/img/images/right2.png" class="floating-right" alt="Floating Right Panel" />
         </div>
     </div>
     <!-- Home section Ends -->
